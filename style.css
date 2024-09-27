@@ -938,6 +938,10 @@ footer .bottom-menu ul li:last-child {
   white-space: wrap;
 }
 
+.sidebar {
+  display: none;
+}
+
 .dropdown-submenu .dropdown-menu {
   top: 0px;
 }
