@@ -338,7 +338,8 @@ nav .logo img {
   transition: transform 0.3s ease; /* Add smooth transition */
 }
 
-.overlay {
+.overlay,
+.sidebar-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -349,6 +350,10 @@ nav .logo img {
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   z-index: 1; /* Make sure it's below the search form */
+}
+
+.sidebar-overlay {
+  z-index: 111;
 }
 
 /* When the search form is focused, show the overlay */
@@ -555,6 +560,14 @@ nav .logo img {
 .more-specification .specification {
   flex-basis: 22%;
   cursor: pointer;
+  gap: 16px;
+}
+
+.back-btn,
+.hamburger {
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
 }
 
 /* View Courses */
@@ -874,9 +887,23 @@ footer .bottom-menu ul li:last-child {
   height: 40px !important;
 }
 
+.sidebar-overlay.show {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
+
+.hamburger {
+  display: none;
+}
+
 .dropend {
   width: 100%;
   text-align: left !important;
+}
+
+.back-btn {
+  display: none;
 }
 
 .dropend button,
@@ -904,7 +931,7 @@ footer .bottom-menu ul li:last-child {
 
 .side-menus {
   position: relative;
-  min-height: calc(100vh - 250px) !important;
+  min-height: calc(100vh - 150px) !important;
 }
 
 .btn-group.dropend {
@@ -912,8 +939,14 @@ footer .bottom-menu ul li:last-child {
   height: 100%; /* Full height for the button group */
 }
 
-.sidebar .dropend a {
+.sidebar .dropend a,
+.sidebar .dropdown-menu a {
   padding: 10px 20px;
+}
+
+.dropdown-menu li {
+  width: 100%;
+  border-bottom: 1px solid #f5f5f5;
 }
 
 .sidebar {
@@ -938,9 +971,28 @@ footer .bottom-menu ul li:last-child {
   white-space: wrap;
 }
 
-.sidebar {
-  display: none;
+.dropdown-submenu {
+  position: relative;
 }
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: 0;
+}
+
+.submenu-back {
+  display: none;
+  cursor: pointer;
+}
+
+.show-back {
+  display: block !important;
+}
+
+/* .sidebar {
+  display: none;
+} */
 
 .dropdown-submenu .dropdown-menu {
   top: 0px;
@@ -969,14 +1021,6 @@ footer .bottom-menu ul li:last-child {
   padding: 10px 20px;
 }
 
-.sidebar .dropdown-menu .back-btn {
-  position: fixed;
-  background-color: transparent !important;
-  top: 80px;
-  color: #006cab;
-  z-index: 1111;
-}
-
 /* Animate the dropdown menu from right to left */
 .sidebar .dropdown-menu {
   animation: slideIn 0.3s forwards;
@@ -986,10 +1030,6 @@ footer .bottom-menu ul li:last-child {
   font-size: 1.2rem;
   cursor: pointer;
   color: #006cab;
-}
-
-.sidebar .back-btn {
-  display: none;
 }
 
 .sidebar .dropdown-menu.show {
@@ -1009,13 +1049,59 @@ footer .bottom-menu ul li:last-child {
 }
 
 .side-footer .navBtn {
-  width: 100%;
+  position: fixed;
+  width: 250px;
+  bottom: 20px;
+  left: 50px;
+  z-index: 100000;
+  display: block;
+}
+
+.dropdown-menu {
+  display: none; /* Initially hide all dropdown menus */
+}
+
+.dropdown-menu.show {
+  display: block; /* Show dropdown when the class "show" is added */
+}
+
+.sidebar {
+  left: -350px;
+  transition: all 0.3s;
+}
+
+.sidebar.show {
+  left: 0;
+}
+
+.sideNavBtn {
+  display: none !important;
+}
+
+.sideNavBtn.show {
   display: block !important;
 }
 
-/* .sidebar {
-  display: none;
-} */
+nav {
+  position: relative;
+}
+
+.hamburger {
+  font-size: 1.4rem;
+  cursor: pointer;
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.overlay.show {
+  display: block !important;
+}
+
+.sidebar.show .side-footer .navBtn {
+  display: block !important;
+}
 
 .hello {
   white-space: nowrap;
@@ -1200,8 +1286,11 @@ nav .dropdown-menu a {
   nav .center-menu {
     display: none !important;
   }
-  .navBtn {
+  nav .navBtn {
     display: none;
+  }
+  .hamburger {
+    display: block !important;
   }
 }
 
