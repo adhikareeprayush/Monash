@@ -1284,7 +1284,10 @@ nav .dropdown-menu a {
     min-height: 200px;
   }
   nav .center-menu {
-    display: none !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   nav .navBtn {
     display: none;
@@ -1340,11 +1343,39 @@ nav .dropdown-menu a {
   .search-form {
     width: 90%;
   }
+
+  nav .logo img {
+    width: 90px;
+  }
+
+  nav .hamburger {
+    right: 10px;
+  }
+
+  nav .center-menu .title {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 500px) {
   .top-bar a {
     font-size: 0.8rem;
     padding: 4px 8px;
+  }
+
+  nav {
+    padding: 10px;
+  }
+
+  .hamburger {
+    font-size: 1.2;
+  }
+
+  nav .logo img {
+    width: 60px;
+  }
+
+  nav .center-menu .title {
+    font-size: 0.9rem;
   }
 }
