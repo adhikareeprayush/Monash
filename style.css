@@ -808,33 +808,33 @@ footer .bottom-menu ul li:last-child {
 }
 
 /* Accordion */
-.accordion-item {
+footer .accordion-item {
   background: transparent !important;
   color: white !important;
 }
 
-.accordion-item button {
+footer .accordion-item button {
   background: transparent !important;
   color: white !important;
   border: none !important;
 }
 
-.accordion-item button:active {
+footer .accordion-item button:active {
   background: transparent !important;
   color: white !important;
   border: none !important;
   outline: none !important;
 }
 
-.accordion-item button:focus {
+footer .accordion-item button:focus {
   box-shadow: 0 0 5px rgba(225, 225, 225, 0.8);
 }
 
-.accordion-button:after {
+footer .accordion-button:after {
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }
 
-.accordion-body {
+footer .accordion-body {
   color: White !important;
 }
 
@@ -1084,6 +1084,7 @@ footer .bottom-menu ul li:last-child {
 
 nav {
   position: relative;
+  z-index: 100;
 }
 
 .hamburger {

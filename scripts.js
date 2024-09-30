@@ -109,4 +109,5 @@ closeBtn.addEventListener('click', function () {
 overlay.addEventListener('click', function () {
     sidebar.classList.remove('show');
     overlay.classList.remove('show');
+    sideNavBtn.classList.remove('show');
 });
