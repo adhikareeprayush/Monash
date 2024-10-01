@@ -1,0 +1,358 @@
+.courses-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.courses-list .card {
+  width: 45%;
+  height: 150px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.features-flex-container .card {
+  box-shadow: none !important;
+  width: 47%;
+}
+
+.features-flex-container .card {
+  flex-direction: row !important;
+  height: 250px;
+  padding: 4px 8px;
+  border-radius: 0px;
+}
+
+.features-flex-container .card .card-icon {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  width: 30%;
+}
+
+.features-flex-container .card .card-icon img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.features-flex-container .card .card-content {
+  width: 70%;
+}
+
+.features-flex-container .card .card-content h5 {
+  font-size: 1.3rem;
+  color: #006dae;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.features-flex-container .card .card-content p {
+  font-size: 1rem;
+  padding-top: 10px;
+}
+
+.blog-card {
+  width: 100%;
+}
+
+.blog-card .right {
+  height: 100%;
+  align-items: start !important;
+  justify-content: start !important;
+  width: 100% !important;
+}
+
+.card .left {
+  width: 50% !important;
+  height: 100%;
+}
+
+.card .left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.big-card {
+  display: flex;
+  align-items: center;
+  flex-direction: row !important;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px !important;
+  box-shadow: 0 0 10px (0, 0, 0, 0.1);
+  height: 600px;
+}
+
+.big-card .left-part {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
+  padding-top: 120px;
+}
+
+.big-card .right-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 100%;
+  padding: 0px !important;
+  position: relative;
+}
+
+.big-card .right-part img {
+  width: 100%;
+  margin: 0px !important;
+  height: 550px;
+  object-fit: cover;
+}
+
+.big-card .right-part {
+  position: relative;
+  overflow: hidden;
+}
+
+/* a cutting effect on the image */
+.big-card .right-part::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  height: 800px;
+  top: 0px;
+  width: 120px;
+  background-color: white;
+  transform: rotate(-10deg);
+}
+
+.big-card .left-part h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: left;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.big-card .left-part p {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.big-card .left-part a {
+  font-size: 1rem;
+  text-align: left;
+  color: white;
+  width: fit-content;
+  font-family: "Roboto", sans-serif;
+}
+
+.big-card {
+  position: relative;
+}
+
+.big-card .highlight-text {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  background-color: #f6f6f6;
+  color: #333;
+  font-weight: 600;
+  font-family: "Roboto Condensed", sans-serif;
+  top: 20px;
+  left: 0px;
+  padding: 8px 14px;
+  padding-left: 16px;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.accordion {
+  border: 0px !important;
+}
+
+.accordion-item {
+  border: 0px !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  border-radius: 0px !important;
+}
+
+.accordion button {
+  box-shadow: none !important;
+  padding: 40px 20px;
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+}
+
+.accordion button img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.accordion button span {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.5rem;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: white !important;
+}
+
+.accordion-body {
+  width: 100%;
+}
+
+.accordion-body p {
+  font-size: 1rem;
+  padding-top: 10px;
+  text-align: left;
+  min-width: 100% !important;
+}
+
+.accordion-body img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.more-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  padding: 8px;
+  min-width: 500px;
+  max-width: 800px;
+  width: 600px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: left;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.more-info a {
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: left;
+  color: #006dae;
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+}
+
+.accordion li {
+  font-size: 1rem;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.accordion ul {
+  list-style-type: disc;
+  padding: 0px 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1050px) {
+  /* .courses-list {
+    flex-direction: column !important;
+  } */
+
+  .courses-list .card {
+    width: 48%;
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 972px) {
+  .blog-card .left {
+    width: 100% !important;
+  }
+
+  .blog-card .left img {
+    width: 100% !important;
+    object-fit: cover;
+  }
+
+  .big-card {
+    flex-direction: column-reverse !important;
+    height: auto !important;
+  }
+
+  .big-card .left-part {
+    width: 100%;
+    padding: 10px 20px;
+    padding-top: 20px;
+  }
+
+  .big-card .right-part {
+    width: 100%;
+    height: 400px;
+  }
+
+  .big-card .right-part img {
+    height: 400px;
+  }
+
+  .big-card .right-part::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: unset;
+    width: calc(100% + 200px);
+    height: 200px;
+    bottom: -120px !important;
+    background-color: white;
+    transform: rotate(-10deg);
+  }
+
+  .highlight-text {
+    top: 0px !important;
+    left: 0px !important;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .courses-list {
+    flex-direction: column !important;
+  }
+
+  .courses-list .card {
+    width: 100%;
+    height: fit-content !important;
+  }
+}
+
+@media screen and (max-width: 762px) {
+  .flex-container {
+    flex-direction: column !important;
+  }
+
+  .flex-container .card {
+    width: 100%;
+    height: fit-content;
+  }
+}
