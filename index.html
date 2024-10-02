@@ -1,0 +1,2211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Topbar -->
+    <div class="top-bar">
+        <div class="left-menu d-flex align-items-center">
+            <a href="#"><i class="bi bi-house-door"></i></a>
+            <div class="dropdown-center">
+                <button class="btn dropdown-toggle border-0 w-100" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Monash Australia
+                </button>
+                <ul class="dropdown-menu p-0 mt-0">
+                    <li><a class="dropdown-item" href="#">Monash India</a></li>
+                    <li><a class="dropdown-item" href="#">Monash Indonesia</a></li>
+                    <li><a class="dropdown-item" href="#">Monash Malaysia</a></li>
+                    <li><a class="dropdown-item" href="#">Monash Prato</a></li>
+                    <li><a class="dropdown-item" href="#">Monash Suzhou</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="center-menu d-flex align-items-center">
+            <a href="#">Courses</a>
+            <a href="#">Monash Online</a>
+            <a href="#">Library</a>
+            <a href="#">Donate</a>
+        </div>
+        <div class="right-menu d-flex align-items-center">
+            <a href="">
+                <i class="bi bi-person-vcard me-1"></i>
+                <span>Staffs</span>
+            </a>
+            <a href="">
+                <i class="bi bi-people me-1"></i>
+                <span>Students</span>
+            </a>
+            <a href="">
+                <i class="bi bi-mortarboard me-1"></i>
+                <span>Alumni</span>
+            </a>
+            <a href="">
+                <i class="bi bi-search"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="w-100 d-flex flex-column align-items-center p-4 gap-3">
+        <div class="headers w-100 d-flex align-items-center justify-content-between">
+            <a href="#" class="logo">
+                <img src="https://www.monash.edu/__data/assets/git_bridge/0006/509343/deploy/mysource_files/monash-logo.svg"
+                    alt="">
+            </a>
+            <div class="center-menu d-flex flex-column align-items-center justify-content-center">
+                <a href="#" class="title">
+                    STUDY AT MONASH
+                </a>
+                <ul class="nav-menus d-flex align-items-center justify-content-center">
+                    <li class="dropdown">
+                        <button data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init class="btn "
+                            type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                            Why Monash?
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Your study options</a></li>
+                            <li><a class="dropdown-item" href="#">Monash courses explained </a></li>
+                            <li><a class="dropdown-item" href="#">Your future career</a></li>
+                            <li><a class="dropdown-item" href="#">Your student experience</a></li>
+                            <li><a class="dropdown-item" href="#">Our rankings</a></li>
+                            <li><a class="dropdown-item" href="#">Our location</a></li>
+                            <li><a class="dropdown-item" href="#">Events</a></li>
+                            <li><a class="dropdown-item" href="#">Information for agents</a></li>
+                            <li><a class="dropdown-item" href="#">Information for partners</a></li>
+                            <li><a class="dropdown-item" href="#">Translated information for international students</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Information for high-achieving school students</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Information for interstate students studying in
+                                    Australia</a></li>
+                            <li><a class="dropdown-item" href="#">Information for international students studying at
+                                    Australian secondary schools</a></li>
+                            <li><a class="dropdown-item" href="#">Information for students from underrpresented
+                                    backgrounds</a></li>
+                            <li><a class="dropdown-item" href="#">Student life</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <button data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init class="btn "
+                            type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                            COURSES
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Find a course</a></li>
+                            <li><a class="dropdown-item" href="#">Majors, extended majors, minors and
+                                    specialisations</a></li>
+                            <li><a class="dropdown-item" href="#">Professional development</a></li>
+                            <li><a class="dropdown-item" href="#">Entry pathways for domestic students</a></li>
+                            <li><a class="dropdown-item" href="#">Entry pathways for international students</a></li>
+                            <li><a class="dropdown-item" href="#">Entry requirements</a></li>
+                            <li><a class="dropdown-item" href="#">English language programs</a></li>
+                            <li><a class="dropdown-item" href="#">Admissions transparency</a></li>
+                            <li><a class="dropdown-item" href="#">Courses guide</a></li>
+                            <li><a class="dropdown-item" href="#">Study online</a></li>
+                            <li><a class="dropdown-item" href="#">Prerequisite subjects and assumed knowledge</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <button data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init class="btn "
+                            type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                            HOW TO APPLY
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Domestic student application</a></li>
+                            <li><a class="dropdown-item" href="#">International student application</a></li>
+                            <li><a class="dropdown-item" href="#">Research degree applications</a></li>
+                            <li><a class="dropdown-item" href="#">Credit for prior study</a></li>
+                            <li><a class="dropdown-item" href="#">Indigeneous student application</a></li>
+                            <li><a class="dropdown-item" href="#">Current Monash student course transfer</a></li>
+                            <li><a class="dropdown-item" href="#">Enquiries</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <button data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init class="btn "
+                            type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                            FEES AND SCHOLORSHIPS
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Fees</a></li>
+                            <li><a class="dropdown-item" href="#">Loans and assistance</a></li>
+                            <li><a class="dropdown-item" href="#">Scholorships</a></li>
+                            <li><a class="dropdown-item" href="#">International study grants</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <button data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init class="btn "
+                            type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                            INTERNATIONAL
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Infromation for agents</a></li>
+                            <li><a class="dropdown-item" href="#">Undergraduate</a></li>
+                            <li><a class="dropdown-item" href="#">Graduate</a></li>
+                            <li><a class="dropdown-item" href="#">Accomodation</a></li>
+                            <li><a class="dropdown-item" href="#">Contact us</a></li>
+                            <li><a class="dropdown-item" href="#">Forms and checklists</a></li>
+                            <li><a class="dropdown-item" href="#">Course guides</a></li>
+                            <li><a class="dropdown-item" href="#">Translated information for students</a></li>
+                            <li><a class="dropdown-item" href="#">For parents</a></li>
+                            <li><a class="dropdown-item" href="#">School counsellors</a></li>
+                            <li><a class="dropdown-item" href="#">Information for international students studying at
+                                    Australian secondary schools</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown more-dropdown">
+                        <button data-mdb-button-init data-mdb-ripple-init data-mdb-dropdown-init class="btn "
+                            type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                            More:
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">COURSES</a></li>
+                            <li><a class="dropdown-item" href="#">HOW TO APPLY </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <a href="" class="btn navBtn">
+                Apply to Study
+            </a>
+
+        </div>
+        <button class="btn hamburger">
+            <i class="bi bi-list"></i>
+        </button>
+        <div class="sidebar-overlay"></div>
+    </nav>
+
+    <section class="search-section d-flex align-items-center justify-content-center">
+        <div class="search-content d-flex flex-column align-items-start gap-2">
+            <h2 class="text-white">Graduate Study Open Week 7 - 15 october</h2>
+            <a href="">
+                <span>Regster now</span>
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+        <div class="search-form">
+            <i class="bi bi-search"></i>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search..." id="triggerSearchModal">
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </section>
+
+    <section class="main-wrapper w-100 d-flex flex-column align-items-center p-3">
+        <div class="main">
+            <div class="content">
+                <div class="content-header">
+                    <h1>Make Change.</h1>
+                    <p class="mb-0">To the way you think. To the path you take.
+                    </p>
+                    <p> To the lives of people all over the world.</p>
+                </div>
+                <div class="content-description">
+                    <div class="startegy flex-container">
+                        <div class="card">
+                            <div class="card-content">
+                                <h5>Top-50 University</h5>
+                                <p>We're 37th in the 2022-23 US News
+                                    and World Report Best Global
+                                    Universities Rankings and 42nd
+                                    globally in the QS World University
+                                    Rankings.</p>
+                            </div>
+                            <div class="card-icon">
+                                <img src="assets/index/school-svgrepo-com.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content">
+                                <h5>Flexible study options</h5>
+                                <p>
+                                    Specialist courses and 60+ double
+                                    degrees across 10 interest areas
+                                </p>
+                            </div>
+                            <div class="card-icon">
+                                <img src="assets/index/certificate-diploma-degree-svgrepo-com.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content">
+                                <h5>Generous Scholorships</h5>
+                                <p>400+ types of scholarships that
+                                    reward talent and unlock potential</p>
+                            </div>
+                            <div class="card-icon">
+                                <img src="assets/index/graduation-cap-svgrepo-com.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="big-card card d-flex flex-row align-items-center justify-content-center gap-3 mt-5">
+                        <div class="card-content">
+                            <h4>Make your change with Monash</h4>
+                            <p>Our academics, students, staff, alumni and donors make up a
+                                community of change makers. Using Al tools, we re-created a version
+                                of our community's younger selves to listen to their stories, and help
+                                them answer the age-old question: would your younger self be proud?</p>
+                            <p>Whether you want to change your life, your career, your community, or the future, it
+                                starts at Monash. Make your change at Monash.</p>
+                            <a href="" class="btn primary-button">Watch the videos</a>
+                        </div>
+                        <div class="card-image">
+                            <img src="assets/index/banner.static (2).jpg" alt="">
+                            <a class="play-btn">
+                                <i class="bi bi-play"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="blog-card card d-flex flex-row align-items-center justify-content-between">
+                        <div class="left">
+                            <img src="assets/index/Technology-and-engineering.jpg" alt="">
+                        </div>
+                        <div class="right d-flex flex-column justify-content-between">
+                            <a class="card-title">Our lens on global current affairs</a>
+                            <p>Monash Lens brings you compelling storytelling and expert commentary from our leading
+                                academics who are changing the world.
+                                Access the latest research and insights here-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="world-ranking my-5 d-flex align-items-center justify-content-center gap-2 flex-column py-5 px-4">
+        <h1 class="text-white">Our world university rankings</h1>
+        <p class="text-white">We've achieved an enviable reputation for research and teaching excellence
+            in a short
+            50 years and are ranked among the world's top universities.</p>
+        <div class="flex-container mt-3 px-3">
+            <div class="card card-transparent">
+                <div class="card-highlight">
+                    <span></span>
+                    <p><i class="bi bi-globe-americas"></i></p>
+                </div>
+                <div class="card-content">
+                    <h4>Ranked 37th globally</h4>
+                    <p>2025 QS World University
+                        Rankings.</p>
+                </div>
+            </div>
+            <div class="card card-transparent">
+                <div class="card-highlight">
+                    <span>#</span>
+                    <p>2</p>
+                </div>
+                <div class="card-content">
+                    <h4>Pharmacy and pharmacology
+                    </h4>
+                    <p>Ranked #2 in the world and #1 in Australia, QS World University Rankings by Subject 2023.
+
+                    </p>
+                </div>
+            </div>
+            <div class="card card-transparent">
+                <div class="card-highlight">
+                    <span>#</span>
+                    <p>3</p>
+                </div>
+                <div class="card-content">
+                    <h4>Nursing</h4>
+                    <p>Ranked #3 in the world and equal #1 in Australia, ShanghaiRanking Global Ranking of Academic
+                        Subjects
+                        (GRAS) 2023.
+
+                    </p>
+                </div>
+            </div>
+            <div class="card card-transparent">
+                <div class="card-highlight">
+                    <span></span>
+                    <p><i class="bi bi-graph-up"></i></p>
+                </div>
+                <div class="card-content">
+                    <h4>35th in the world
+                    </h4>
+                    <p>We rank 35th in the US News and World Report 2024-25 Best Global Universities Rankings.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <div class="big-card big-card-out card my-5">
+        <a href="" class="highlight-text">
+            Strategic Plan
+        </a>
+        <div class="left-part">
+            <h3>Impact 2030
+            </h3>
+            <p>Monash University has the ambition and capabilities through its excellence in education and research, its
+                record for innovation and collaboration, and its international profile to address the global challenges
+                of our age. We encourage you to read our Strategic Plan, Impact 2030, and join our commitment to
+                ensuring a better future for ourselves and for the communities in which we study, work, live and engage.
+            </p>
+            <a href="" class="btn primary-button">Find out more</a>
+        </div>
+        <div class="right-part h-100">
+            <img class="h-100" src="assets/index/banner.static (4).jpg" alt="">
+            <div class="play-btn">
+                <i class="bi bi-play"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="monash-explorer my-5">
+        <div class="video">
+            <video src="assets/index/earth_tiny.mp4" autoplay loop muted></video>
+        </div>
+        <div class="centerd-card d-flex flex-column align-items-center justify-content-center">
+            <h2>Monash Explorer</h2>
+            <p class="mb-0">Discover life at Monash University through the eyes of students, staff, alumni and
+                academics.</p>
+            <p>Anytime. Anywhere.
+            </p>
+            <a href="" class="btn primary-button">Explore now</a>
+        </div>
+    </div>
+
+    <h3 class="text-center my-3">Latest News</h3>
+
+    <div class="card news-big-card my-4">
+        <div class="left-image">
+            <img src="assets/index/GettyImages-2148837059-2.jpg" alt="">
+        </div>
+        <div class="right-content">
+            <div class="top-content">
+                <h2>Study reveals cost saving alternatives to knee
+                    replacement surgery</h4>
+                    <p>An innovative Monash University-led study has shown that structured
+                        education and exercise therapy may be cost-effective measures that delay
+                        or avoid knee replacement surgery in people with lower pain levels, while
+                        improving healthcare sustainability.</p>
+            </div>
+            <p class="footer-news-big-card">MEDICINE & HEALTH</p>
+        </div>
+    </div>
+
+    <div class="news-boxes">
+        <div class="card d-flex align-items-start justify-content-between left-part-news-box">
+            <h2 class="news-title">First human vagus nerve
+                recordings pinpoint
+                cardiovascular signals</h2>
+            <div class="image-container">
+                <img src="assets/index/Spine-sketch.-LOW-RES-Credit-Joyce-Hankins-via-Unsplash-1.jpg" alt="">
+            </div>
+            <div class="news-content">
+                The team that first recorded vagus nerve
+                signals in humans has isolated the
+                electrical activity of individual neurones
+                responsible for cardiovascular regulation.
+            </div>
+            <div class="news-date">
+                1 October 2024
+            </div>
+            <a class="news-footer">
+                MEDICINE & HEALTH
+            </a>
+        </div>
+        <div class="right-part-news-box">
+            <div class="right-part-top">
+                <div class="card">
+                    <div class="d-flex flex-column">
+                        <h2 class="news-title">Harnessing extended reality to
+                            drown the fear of water</h2>
+                        <div class="news-content">
+                            <p>
+                                <b>Monash University human-computer
+                                    interaction researchers have developed
+                                    a playful water-inspired extended
+                                    reality system using floatation tanks to
+                                    help reduce aquaphobia.</b>
+                            </p>
+                        </div>
+                        <div class="news-date">
+                            1 October 2024
+                        </div>
+                    </div>
+                    <a href="" class="news-footer">
+                        ENGINEERING & TECHNOLOGY
+                    </a>
+                </div>
+                <div class="card">
+                    <h2 class="news-title">Use artificial intelligence to
+                        reduce risks to critical mineral
+                        supply</h2>
+                    <div class="news-content">
+                        <p>
+                            Australia risks losing its world-leading
+                            advantage in critical and rare minerals
+                            used for clean energy, electric vehicles
+                            and batteries for solar energy, unless it
+                            embraces artificial intelligence in the
+                            mining sector, according to research trom
+                            Monash University and the I-Jniversity ot
+                            Tasmania.
+                        </p>
+                    </div>
+                    <div class="news-date">
+                        1 October 2024
+                    </div>
+                    <a href="" class="news-footer">
+                        Business
+                    </a>
+                </div>
+            </div>
+            <div class="right-bottom-part">
+                <div class="blog-card card d-flex flex-row align-items-center justify-content-between">
+                    <div class="left">
+                        <img src="assets/index/_MP_4738-1-2-1.jpg" alt="">
+                    </div>
+                    <div class="right d-flex flex-column justify-content-between">
+                        <h2 class="news-title">Monash gains fifth Science in
+                            Australia Gender Equity (SAGE)
+                            Cygnet Award</h2>
+                        <div class="news-content">
+                            <p>Monasn University nas been awarded its fifth
+                                Science in Australia Gender Equity (SAGE)
+                                Cygnet Award</p>
+                        </div>
+                        <div class="news-footer">
+                            UNIVERSITY NEWS
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-100 d-flex align-items-center justify-content-center mb-4">
+        <a href="" class="btn primary-button">View More Articles</a>
+    </div>
+
+
+    <div id="imageCarousel" class="carousel slide my-5">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="image-grid">
+                    <div class="image">
+                        <img src="https://curator-assets.b-cdn.net/66baac04-a650-4395-81bb-5d1a1779fa1b/358171567.jpg"
+                            alt="Image 1">
+                        <div class="image-hover-content">
+                            <a href="" class="author">Monash University</a>
+                            <p>From Monday, join us for an unmissable week of events with our leading academics, current
+                                postgraduate students, and expert staff! 📚</p>
+                            <p>Whether you’re looking to dive deep into your passion, explore a new field, or learn how
+                                graduate study can help you stand out in a competitive job market, this week is for you.
+                            </p>
+                            <button class="btn read-more" data-bs-toggle="modal" data-bs-target="#readmoreModal">Read
+                                More</buthref=>
+                        </div>
+                        <div class="social-media">
+                            <i class="bi bi-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="https://via.placeholder.com/150" alt="Image 2">
+                    </div>
+                    <div class="image">
+                        <img src="https://via.placeholder.com/150" alt="Image 3">
+                    </div>
+                    <div class="image">
+                        <img src="https://via.placeholder.com/150" alt="Image 2">
+                    </div>
+                    <div class="image">
+                        <img src="https://via.placeholder.com/150" alt="Image 3">
+                    </div>
+                    <div class="image">
+                        <img src="https://via.placeholder.com/150" alt="Image 2">
+                    </div>
+                    <div class="image">
+                        <img src="https://via.placeholder.com/150" alt="Image 3">
+                    </div>
+                    <div class="image">
+                        <img src="https://via.placeholder.com/150" alt="Image 2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="image-grid">
+                    <div class="image">
+                        <img src="https://via.placeholder.com/150" alt="Image 1">
+                    </div>
+                    <div class="image">
+                        <img src="https://via.placeholder.com/150" alt="Image 2">
+                    </div>
+                    <div class="image">
+                        <img src="https://via.placeholder.com/150" alt="Image 3">
+                    </div>
+                    <div class="image">
+                        <img src="https://via.placeholder.com/150" alt="Image 2">
+                    </div>
+                    <div class="image">
+                        <img src="https://via.placeholder.com/150" alt="Image 3">
+                    </div>
+                    <div class="image">
+                        <img src="https://via.placeholder.com/150" alt="Image 2">
+                    </div>
+                    <div class="image">
+                        <img src="https://via.placeholder.com/150" alt="Image 3">
+                    </div>
+                    <div class="image">
+                        <img src="https://via.placeholder.com/150" alt="Image 2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <div class="image-grid">
+                    <div class="image">
+                        <img src="https://via.placeholder.com/150" alt="Image 1">
+                    </div>
+                    <div class="image">
+                        <img src="https://via.placeholder.com/150" alt="Image 2">
+                    </div>
+                    <div class="image">
+                        <img src="https://via.placeholder.com/150" alt="Image 3">
+                    </div>
+                    <div class="image">
+                        <img src="https://via.placeholder.com/150" alt="Image 2">
+                    </div>
+                    <div class="image">
+                        <img src="https://via.placeholder.com/150" alt="Image 3">
+                    </div>
+                    <div class="image">
+                        <img src="https://via.placeholder.com/150" alt="Image 2">
+                    </div>
+                    <div class="image">
+                        <img src="https://via.placeholder.com/150" alt="Image 3">
+                    </div>
+                    <div class="image">
+                        <img src="https://via.placeholder.com/150" alt="Image 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+            <i class="bi  bi-chevron-left"></i>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+            <i class="bi  bi-chevron-right"></i>
+        </button>
+    </div>
+
+    <!-- Readmore modal -->
+    <div class="modal fade" id="readmoreModal" tabindex="-1" aria-labelledby="readmoreModal" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered modal-lg post-modal">
+            <div class="modal-content ">
+                <div class="modal-body">
+                    <div class="content-modal d-flex">
+                        <div class="post-poster">
+                            <img src="https://curator-assets.b-cdn.net/66baac04-a650-4395-81bb-5d1a1779fa1b/358171567.jpg"
+                                alt="">
+                        </div>
+                        <div class="post-details">
+                            <div class="post-header">
+                                <div class="social-media">
+                                    <i class="bi bi-instagram"></i>
+                                </div>
+                                <div class="user">
+                                    <p class="mb-0">monash_uni</p>
+                                    <p>@monash_uni</p>
+                                </div>
+                                <button type="button" class="btn close-btn" data-bs-dismiss="modal">
+                                    <i class="bi bi-x"></i>
+                                </button>
+                            </div>
+                            <hr>
+                            <div class="post-time">
+                                6 HOURS AGO
+                            </div>
+                            <div class="post-content">
+                                <pre>From Monday, join us for an unmissable week of events with our leading academics, current postgraduate students, and expert staff! 📚
+
+Whether you’re looking to dive deep into your passion, explore a new field, or learn how graduate study can help you stand out in a competitive job market, this week is for you.
+
+Don’t miss out on this opportunity to shape your future.
+
+Head to the link in our bio to learn more. 🔗 👆
+
+#MonashUni #ChangeIt
+                                </pre>
+                            </div>
+                            <div class="goto-original-post">
+                                Go to original post
+                            </div>
+                            <div class="post-engagements">
+                                <div class="likes">0 Likes</div>
+                                <div class="comments">0 Comments</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sidebar">
+        <div class="side-top-bar top-bar w-100 justify-content-start">
+            <a href="#"><i class="bi bi-house-door"></i></a>
+            <div class="sidebar-top-center-menu d-flex align-items-center">
+                <a href="#">Courses</a>
+                <a href="#">Monasha</a>
+                <a href="#">Library</a>
+                <a href="#">Donate</a>
+            </div>
+        </div>
+        <div class="side-bar-buttons d-flex align-items-center justify-content-between px-3" style="height: 60px;">
+            <button class="btn back-btn">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+            <div class="close-sidebar ms-auto close-btn d-flex align-items-center justify-content-between p-2">
+                <i class="bi bi-x"></i>
+            </div>
+        </div>
+        <a href="" class="side-header">
+            Study at Monash
+        </a>
+        <ul class="side-menus list-unstyled">
+            <li class="btn-group dropend">
+                <a class="btn dropdown-toggle" href="#" role="button" aria-expanded="false" data-bs-toggle="dropdown">
+                    Why Monash
+                </a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button">Your study options</a>
+                        <ul class="dropdown-menu">
+                            <li class="submenu-back"><a class="dropdown-item" href="#">Back</a></li>
+                            <li><a href="#" class="dropdown-item">Part-time studying</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#" role="button">Mature age
+                                    learning</a>
+                                <ul class="dropdown-menu">
+                                    <li class="submenu-back"><a class="dropdown-item" href="#">Back</a></li>
+                                    <li><a href="#" class="dropdown-item">Monash access program</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button">Monash courses explained</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Undergraduate</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#" role="button">Double Degrees</a>
+                                <ul class="dropdown-menu">
+                                    <li class="submenu-back"><a class="dropdown-item" href="#">Back</a></li>
+                                    <li><a href="#" class="dropdown-item">Art, Design and Architecture</a></li>
+                                    <li><a href="#" class="dropdown-item">Arts</a></li>
+                                    <li><a href="#" class="dropdown-item">Business</a></li>
+                                    <li><a href="#" class="dropdown-item">Education</a></li>
+                                    <li><a href="#" class="dropdown-item">Engineering</a></li>
+                                    <li><a href="#" class="dropdown-item">Information Technology</a></li>
+                                    <li><a href="#" class="dropdown-item">Law</a></li>
+                                    <li><a href="#" class="dropdown-item">Medicine, Nursing and Health Services</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Pharmacy and Pharmaceutical Services</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Science</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Double degrees</a></li>
+                            <li><a href="#" class="dropdown-item">Graduate degrees</a></li>
+                            <li><a href="#" class="dropdown-item">Research degrees</a></li>
+                            <li><a href="#" class="dropdown-item">Professional Development</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button">Your future career</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Alumni success stories</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button">Your student experience </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Your learning environment</a></li>
+                            <li><a href="#" class="dropdown-item">Leadership</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Our rankings</a></li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button">Our locations</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Clayton campus</a></li>
+                            <li><a href="#" class="dropdown-item">Caulfield campus</a></li>
+                            <li><a href="#" class="dropdown-item">Parkville campus</a></li>
+                            <li><a href="#" class="dropdown-item">Peninsula campus</a></li>
+                            <li><a href="#" class="dropdown-item">Collins Street campus</a></li>
+                            <li><a href="#" class="dropdown-item">Law Chambers</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#" role="button">Life in
+                                    Melbourne</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">Cost of living</a></li>
+                                    <li><a href="#" class="dropdown-item">Bringing family (child care)</a></li>
+                                    <li><a href="#" class="dropdown-item">Life in Melbourne video</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button">Events</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Change of Preference entry options</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button">Information for agents</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Becoming a licensed Monash agent</a></li>
+                            <li><a href="#" class="dropdown-item">Contacts for agents</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button">Information for parents</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">The benefits of university education</a></li>
+                            <li><a href="#" class="dropdown-item">Types of undergraduate courses</a></li>
+                            <li><a href="#" class="dropdown-item">Internal transfers for Monash students</a></li>
+                            <li><a href="#" class="dropdown-item">Making the transition to university study</a></li>
+                            <li><a href="#" class="dropdown-item">Useful terms</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button">Translated information for
+                            international students</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Latin America</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button">Information for
+                            high-achieving
+                            school students</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#" role="button">Monash Scholars</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">Monash Scholars frquently asked
+                                            questions</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Operoo FAQs</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#" role="button">Monash
+                                            Scholars
+                                            events</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#" class="dropdown-item">Year 11 - Networking and Effective
+                                                    Communication</a></li>
+                                            <li><a href="#" class="dropdown-item">Monash Scholars APplication
+                                                    Intake</a>
+                                            </li>
+                                            <li><a href="#" class="dropdown-item">Monash Scholars Successful
+                                                    Application</a></li>
+                                            <li><a href="#" class="dropdown-item">Monash Scholars Years 10 Team
+                                                    Building</a></li>
+                                            <li><a href="#" class="dropdown-item">Monash Scholars - What it takes to
+                                                    be
+                                                    a doctor</a></li>
+                                            <li><a href="#" class="dropdown-item">Monash Scholars Year 12 Beat
+                                                    Procastination! Conquer Time! Webinar</a></li>
+                                            <li><a href="#" class="dropdown-item">Year 11 Monash Scholars: Choose
+                                                    Your
+                                                    Own Adventure</a></li>
+                                            <li><a href="#" class="dropdown-item">Monash Scholars Year 10 Event:
+                                                    Preparing for Year 11 and 12</a></li>
+                                            <li><a href="#" class="dropdown-item">Year 12 Scholars - Motivation Your
+                                                    Mind</a></li>
+                                            <li><a href="#" class="dropdown-item">Monash Scholars - What it takes to
+                                                    build a career with Economics</a></li>
+                                            <li><a href="#" class="dropdown-item">Year 11 and 12 Study Skills
+                                                    Webinar -
+                                                    Study Hacks for Academic Success</a></li>
+                                            <li><a href="#" class="dropdown-item">Monash Scholars - What it takes to
+                                                    make data your career</a></li>
+                                            <li><a href="#" class="dropdown-item">Monash Scholars - What it takes to
+                                                    be
+                                                    Lawyer!</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button">Information for schools and
+                            teachers</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#" role="button">School visit booking
+                                    form</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">Schools and teacher engagement</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Domestic student recruitment team</a></li>
+                                    <li><a href="#" class="dropdown-item">International Student Recruitment Team</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Events and Programs</a></li>
+                                    <li><a href="#" class="dropdown-item">Monash Update</a></li>
+                                    <li><a href="#" class="dropdown-item">Tertiary Information Service</a></li>
+                                    <li><a href="#" class="dropdown-item">Careers Practioners Seminar</a></li>
+                                    <li><a href="#" class="dropdown-item">Monasg course guides</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Information for interstate students studying in
+                            Australia</a>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Information for students studying at Australian secondary
+                            schools</a>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button">Information for schools and
+                            teachers</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#" role="button">Student life</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">Club and societies</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Sport at Monash</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#" role="button">Services for
+                                            students</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#" role="button">Rural
+                                                    stduent services</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#" class="dropdown-item">International students</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Accomodation</a></li>
+                                    <li><a href="#" class="dropdown-item">Getting started</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="btn-group dropend">
+                <a class="btn dropdown-toggle" href="#" role="button" aria-expanded="false" data-bs-toggle="dropdown">
+                    Courses
+                </a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button">Find a course</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Accounting - B2029</a></li>
+                            <li><a href="#" class="dropdown-item">Accounting - B6038</a></li>
+                            <li><a href="#" class="dropdown-item">Actuarial Science - B2033</a></li>
+                            <li><a href="#" class="dropdown-item">Actuarial Science and Actuarial Studies -
+                                    B6060</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Actuarial Studies - B6014</a></li>
+                            <li><a href="#" class="dropdown-item">Addictive Behaviours - M4018</a></li>
+                            <li><a href="#" class="dropdown-item">Addictive Behaviours - M5022</a></li>
+                            <li><a href="#" class="dropdown-item">Addictive Behaviours - M6014</a></li>
+                            <li><a href="#" class="dropdown-item">Addressing the Needs of EAL Students in Primary
+                                    Classrooms - PDD1008</a></li>
+                            <li><a href="#" class="dropdown-item">Advanced Clinical Nursing - M6031</a></li>
+                            <li><a href="#" class="dropdown-item">Advanced Coaching Skills for Educational
+                                    Leadership -
+                                    PDD1078</a></li>
+                            <li><a href="#" class="dropdown-item">Advanced Engineering - E6017</a></li>
+                            <li><a href="#" class="dropdown-item">Advanced Executive Diabetes Education Program -
+                                    PDM1178</a></li>
+                            <li><a href="#" class="dropdown-item">Advanced Finance - B6039</a></li>
+                            <li><a href="#" class="dropdown-item">Advanced Health Care Practice - M6001</a></li>
+                            <li><a href="#" class="dropdown-item">Advanced Nursing - M6006</a></li>
+                            <li><a href="#" class="dropdown-item">Advancing Skills in Paediatric Physiotherapy -
+                                    Neonates and infants - PDM1055</a></li>
+                            <li><a href="#" class="dropdown-item">Advancing skills in Paediatric Physiotherapy -
+                                    Cerebral Palsy - PDM1056</a></li>
+                            <li><a href="#" class="dropdown-item">Aeromedical Retrieval - M4022</a></li>
+                            <li><a href="#" class="dropdown-item">An Introduction to Using Research to Inform
+                                    Educational Practice - PDD1081</a></li>
+                            <li><a href="#" class="dropdown-item">An evidence-based approach to the assessment and
+                                    management of Polycystic Ovary Syndrome - PDM1176</a></li>
+                            <li><a href="#" class="dropdown-item">Analytics - B4008</a></li>
+                            <li><a href="#" class="dropdown-item">Analytics - B6028</a></li>
+                            <li><a href="#" class="dropdown-item">Applied Behaviour Analysis - D6015</a></li>
+                            <li><a href="#" class="dropdown-item">Applied Data Science - C4012</a></li>
+                            <li><a href="#" class="dropdown-item">Applied Data Science - C5003</a></li>
+                            <li><a href="#" class="dropdown-item">Applied Data Science - C6011</a></li>
+                            <li><a href="#" class="dropdown-item">Applied Data Science - S2010</a></li>
+                            <li><a href="#" class="dropdown-item">Applied Data Science Advanced - S3003</a></li>
+                            <li><a href="#" class="dropdown-item">Applied Econometrics - B6036</a></li>
+                            <li><a href="#" class="dropdown-item">Applied Econometrics and Advanced Finance -
+                                    B6043</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Applied Linguistics - A4016</a></li>
+                            <li><a href="#" class="dropdown-item">Applied Linguistics - A6001</a></li>
+                            <li><a href="#" class="dropdown-item">Applied Marketing - B6042</a></li>
+                            <li><a href="#" class="dropdown-item">Applying Behavioural Science to Create Change -
+                                    PDU1004</a></li>
+                            <li><a href="#" class="dropdown-item">Architectural Design - F2001</a></li>
+                            <li><a href="#" class="dropdown-item">Architectural Design and Architecture - F6003</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Architecture - F6001</a></li>
+                            <li><a href="#" class="dropdown-item">Art and Design - 2613</a></li>
+                            <li><a href="#" class="dropdown-item">Art, Design and Architecture - 1322</a></li>
+                            <li><a href="#" class="dropdown-item">Artificial Intelligence - C4008</a></li>
+                            <li><a href="#" class="dropdown-item">Artificial Intelligence - C4015</a></li>
+                            <li><a href="#" class="dropdown-item">Artificial Intelligence - C6007</a></li>
+                            <li><a href="#" class="dropdown-item">Arts - 0020</a></li>
+                            <li><a href="#" class="dropdown-item">Arts - 0498</a></li>
+                            <li><a href="#" class="dropdown-item">Arts - 2618</a></li>
+                            <li><a href="#" class="dropdown-item">Arts - 2695</a></li>
+                            <li><a href="#" class="dropdown-item">Arts - A2000</a></li>
+                            <li><a href="#" class="dropdown-item">Arts - A3701</a></li>
+                            <li><a href="#" class="dropdown-item">Arts - Education - 2645</a></li>
+                            <li><a href="#" class="dropdown-item">Arts Research Training - A7001</a></li>
+                            <li><a href="#" class="dropdown-item">Arts and Criminology - A2012</a></li>
+                            <li><a href="#" class="dropdown-item">Arts and Fine Art - A2005</a></li>
+                            <li><a href="#" class="dropdown-item">Arts and Global Studies - A2018</a></li>
+                            <li><a href="#" class="dropdown-item">Arts and Health Sciences - A2017</a></li>
+                            <li><a href="#" class="dropdown-item">Arts and Media Communication - A2019</a></li>
+                            <li><a href="#" class="dropdown-item">Arts and Music - A2004</a></li>
+                            <li><a href="#" class="dropdown-item">Assessment in Health Professions Education -
+                                    PDM1097</a></li>
+                            <li><a href="#" class="dropdown-item">Australian Law - L5002</a></li>
+                            <li><a href="#" class="dropdown-item">BPT Cardiology 2024 - PDM1184</a></li>
+                            <li><a href="#" class="dropdown-item">Banking and Finance - B2042</a></li>
+                            <li><a href="#" class="dropdown-item">Banking and Finance - B6004</a></li>
+                            <li><a href="#" class="dropdown-item">Behaviour Change - S4009</a></li>
+                            <li><a href="#" class="dropdown-item">Behaviour Change and Implementation Science for
+                                    Health
+                                    and Social Care Improvement - PDM1155</a></li>
+                            <li><a href="#" class="dropdown-item">Behaviour and Systemic Change - S6011</a></li>
+                            <li><a href="#" class="dropdown-item">Bioethics - A4003</a></li>
+                            <li><a href="#" class="dropdown-item">Bioethics - A6002</a></li>
+                            <li><a href="#" class="dropdown-item">Biomedical Science - 2977</a></li>
+                            <li><a href="#" class="dropdown-item">Biomedical Science - M2003</a></li>
+                            <li><a href="#" class="dropdown-item">Biomedical Science - M3702</a></li>
+                            <li><a href="#" class="dropdown-item">Biomedical and Health Science - M6003</a></li>
+                            <li><a href="#" class="dropdown-item">Biostatistics - M5017</a></li>
+                            <li><a href="#" class="dropdown-item">Biostatistics - M6025</a></li>
+                            <li><a href="#" class="dropdown-item">Biostatistics for Clinical and Public Health
+                                    Research
+                                    - PDM1041</a></li>
+                            <li><a href="#" class="dropdown-item">Biotechnology - M6030</a></li>
+                            <li><a href="#" class="dropdown-item">Business - B2000</a></li>
+                            <li><a href="#" class="dropdown-item">Business - B4001</a></li>
+                            <li><a href="#" class="dropdown-item">Business - B5001</a></li>
+                            <li><a href="#" class="dropdown-item">Business - B6005</a></li>
+                            <li><a href="#" class="dropdown-item">Business - Business - 2607</a></li>
+                            <li><a href="#" class="dropdown-item">Business - Commerce - 2608</a></li>
+                            <li><a href="#" class="dropdown-item">Business - Education - 2647</a></li>
+                            <li><a href="#" class="dropdown-item">Business Administration (Digital) - B4009</a></li>
+                            <li><a href="#" class="dropdown-item">Business Administration (Digital) - B6029</a></li>
+                            <li><a href="#" class="dropdown-item">Business Administration - B2007</a></li>
+                            <li><a href="#" class="dropdown-item">Business Analytics - B6022</a></li>
+                            <li><a href="#" class="dropdown-item">Business Information Systems - C4005</a></li>
+                            <li><a href="#" class="dropdown-item">Business Information Systems - C6003</a></li>
+                            <li><a href="#" class="dropdown-item">Business Management - B4006</a></li>
+                            <li><a href="#" class="dropdown-item">Business Management - B6026</a></li>
+                            <li><a href="#" class="dropdown-item">Business and Accounting - B2040</a></li>
+                            <li><a href="#" class="dropdown-item">Business and Arts - B2019</a></li>
+                            <li><a href="#" class="dropdown-item">Business and Banking and Finance - B2035</a></li>
+                            <li><a href="#" class="dropdown-item">Business and Economics - 0029</a></li>
+                            <li><a href="#" class="dropdown-item">Business and Information Technology - B2017</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Business and Marketing - B2037</a></li>
+                            <li><a href="#" class="dropdown-item">Business and Media Communication - B2028</a></li>
+                            <li><a href="#" class="dropdown-item">Certificate of Completion in Adolescent
+                                    Counselling -
+                                    PDD1089</a></li>
+                            <li><a href="#" class="dropdown-item">Certificate of Completion in Coaching for
+                                    Educational
+                                    Leaders - PDD1091</a></li>
+                            <li><a href="#" class="dropdown-item">Certificate of Completion in Education Support -
+                                    PDD1090</a></li>
+                            <li><a href="#" class="dropdown-item">Certificate of Completion in International School
+                                    Leadership - PDD1087</a></li>
+                            <li><a href="#" class="dropdown-item">Clear Leadership - PDB1028</a></li>
+                            <li><a href="#" class="dropdown-item">Climate change and business risk - PDU1001</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Clinical Embryology - M6010</a></li>
+                            <li><a href="#" class="dropdown-item">Clinical Neuropsychology - 4586</a></li>
+                            <li><a href="#" class="dropdown-item">Clinical Pharmacy (Aged Care) - P4004</a></li>
+                            <li><a href="#" class="dropdown-item">Clinical Pharmacy - P6002</a></li>
+                            <li><a href="#" class="dropdown-item">Clinical Psychology - 4585</a></li>
+                            <li><a href="#" class="dropdown-item">Clinical Psychology - M6046</a></li>
+                            <li><a href="#" class="dropdown-item">Clinical Neuropsychology - 4586</a></li>
+                            <li><a href="#" class="dropdown-item">Clinical Pharmacy (Aged Care) - P4004</a></li>
+                            <li><a href="#" class="dropdown-item">Clinical Pharmacy - P6002</a></li>
+                            <li><a href="#" class="dropdown-item">Clinical Psychology - 4585</a></li>
+                            <li><a href="#" class="dropdown-item">Clinical Psychology - M6046</a></li>
+                            <li><a href="#" class="dropdown-item">Clinical Registry Data Analysis Using Stata -
+                                    PDM1119</a></li>
+                            <li><a href="#" class="dropdown-item">Clinical Research - M6028</a></li>
+                            <li><a href="#" class="dropdown-item">Clinical Simulation - M4008</a></li>
+                            <li><a href="#" class="dropdown-item">Clinical Simulation - M6039</a></li>
+                            <li><a href="#" class="dropdown-item">Clinical Trial Fundamentals (Online) - PDM1129</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Clinical Trial Fundamentals - PDM1120</a></li>
+                            <li><a href="#" class="dropdown-item">Clinical Trials in Practice - PDM1163</a></li>
+                            <li><a href="#" class="dropdown-item">Commerce - B2001</a></li>
+                            <li><a href="#" class="dropdown-item">Commerce - B3701</a></li>
+                            <li><a href="#" class="dropdown-item">Commerce - B6023</a></li>
+                            <li><a href="#" class="dropdown-item">Commerce and Actuarial Science - B2030</a></li>
+                            <li><a href="#" class="dropdown-item">Commerce and Arts - B2020</a></li>
+                            <li><a href="#" class="dropdown-item">Commerce and Biomedical Science - B2021</a></li>
+                            <li><a href="#" class="dropdown-item">Commerce and Computer Science - B2008</a></li>
+                            <li><a href="#" class="dropdown-item">Commerce and Economics - B2032</a></li>
+                            <li><a href="#" class="dropdown-item">Commerce and Finance - B2043</a></li>
+                            <li><a href="#" class="dropdown-item">Commerce and Global Studies - B2006</a></li>
+                            <li><a href="#" class="dropdown-item">Commerce and Information Technology - B2025</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Commerce and Music - B2022</a></li>
+                            <li><a href="#" class="dropdown-item">Commerce and Politics, Philosophy and Economics -
+                                    B2047</a></li>
+                            <li><a href="#" class="dropdown-item">Commerce and Science - B2023</a></li>
+                            <li><a href="#" class="dropdown-item">Communications and Media Studies - A4007</a></li>
+                            <li><a href="#" class="dropdown-item">Communications and Media Studies - A6003</a></li>
+                            <li><a href="#" class="dropdown-item">Compassion Training for Healthcare Workers -
+                                    PDM1150</a></li>
+                            <li><a href="#" class="dropdown-item">Computer Science - C2001</a></li>
+                            <li><a href="#" class="dropdown-item">Computer Science - C3702</a></li>
+                            <li><a href="#" class="dropdown-item">Computer Science - C4009</a></li>
+                            <li><a href="#" class="dropdown-item">Computer Science - C5008</a></li>
+                            <li><a href="#" class="dropdown-item">Computer Science - C6008</a></li>
+                            <li><a href="#" class="dropdown-item">Computer Science Advanced - C3001</a></li>
+                            <li><a href="#" class="dropdown-item">Corporate and Financial Regulation - L4008</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Counselling - D4002</a></li>
+                            <li><a href="#" class="dropdown-item">Counselling - D6003</a></li>
+                            <li><a href="#" class="dropdown-item">Court Interpreting - PDA1011</a></li>
+                            <li><a href="#" class="dropdown-item">Court Interpreting in Family Violence Matters -
+                                    PDA1027</a></li>
+                            <li><a href="#" class="dropdown-item">Creative writing - 3940</a></li>
+                            <li><a href="#" class="dropdown-item">Criminology - A2008</a></li>
+                            <li><a href="#" class="dropdown-item">Criminology and Information Technology - A2009</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Criminology and Policing - A2014</a></li>
+                            <li><a href="#" class="dropdown-item">Critical Care Paramedicine - M6015</a></li>
+                            <li><a href="#" class="dropdown-item">Cultural and Creative Industries - A4017</a></li>
+                            <li><a href="#" class="dropdown-item">Cultural and Creative Industries - A6004</a></li>
+                            <li><a href="#" class="dropdown-item">Cybersecurity - C4001</a></li>
+                            <li><a href="#" class="dropdown-item">Cybersecurity - C6002</a></li>
+                            <li><a href="#" class="dropdown-item">Dare To Lead™ - PDB1128</a></li>
+                            <li><a href="#" class="dropdown-item">Data Science - C4004</a></li>
+                            <li><a href="#" class="dropdown-item">Data Science - C6004</a></li>
+                            <li><a href="#" class="dropdown-item">Design (by Research) - 3111</a></li>
+                            <li><a href="#" class="dropdown-item">Design - F2010</a></li>
+                            <li><a href="#" class="dropdown-item">Design - F6002</a></li>
+                            <li><a href="#" class="dropdown-item">Design and Arts - F2014</a></li>
+                            <li><a href="#" class="dropdown-item">Design and Business - F2011</a></li>
+                            <li><a href="#" class="dropdown-item">Design and Information Technology - F2012</a></li>
+                            <li><a href="#" class="dropdown-item">Design and Media Communication - F2009</a></li>
+                            <li><a href="#" class="dropdown-item">Designing and Using Surveys and Questionnaires for
+                                    Clinical Practice - PDM1123</a></li>
+                            <li><a href="#" class="dropdown-item">Digital Business - B2049</a></li>
+                            <li><a href="#" class="dropdown-item">Digital Business and Business - B2051</a></li>
+                            <li><a href="#" class="dropdown-item">Digital Business and Information Technology -
+                                    B2050</a></li>
+                            <li><a href="#" class="dropdown-item">Driving Change: Harnessing Implementation Science
+                                    for
+                                    Healthcare Improvement, Real-World Impact, and Equity - PDM1175</a></li>
+                            <li><a href="#" class="dropdown-item">Early Childhood Education - D4011</a></li>
+                            <li><a href="#" class="dropdown-item">Early Childhood Education - D5005</a></li>
+                            <li><a href="#" class="dropdown-item">Economic Analytics - B5007</a></li>
+                            <li><a href="#" class="dropdown-item">Economics - B2031</a></li>
+                            <li><a href="#" class="dropdown-item">Economics - B6030</a></li>
+                            <li><a href="#" class="dropdown-item">Education - 0079</a></li>
+                            <li><a href="#" class="dropdown-item">Education - D3001</a></li>
+                            <li><a href="#" class="dropdown-item">Education - D6002</a></li>
+                            <li><a href="#" class="dropdown-item">Education Interpreting - PDA1012</a></li>
+                            <li><a href="#" class="dropdown-item">Education Studies - D4001</a></li>
+                            <li><a href="#" class="dropdown-item">Education and Arts - D3002</a></li>
+                            <li><a href="#" class="dropdown-item">Education and Business - D3007</a></li>
+                            <li><a href="#" class="dropdown-item">Education and Fine Art - D3006</a></li>
+                            <li><a href="#" class="dropdown-item">Education and Music - D3004</a></li>
+                            <li><a href="#" class="dropdown-item">Education and Science - D3005</a></li>
+                            <li><a href="#" class="dropdown-item">Educational Design - D4008</a></li>
+                            <li><a href="#" class="dropdown-item">Educational Leadership - D6013</a></li>
+                            <li><a href="#" class="dropdown-item">Educational Research - D4004</a></li>
+                            <li><a href="#" class="dropdown-item">Educational and Developmental Psychology -
+                                    3736</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Educational and Developmental Psychology -
+                                    D6007</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Educational and Developmental Psychology Advanced
+                                    -
+                                    D6016</a></li>
+                            <li><a href="#" class="dropdown-item">Embedding Research Use in Educational Practice -
+                                    PDD1086</a></li>
+                            <li><a href="#" class="dropdown-item">Employment Regulation - L4010</a></li>
+                            <li><a href="#" class="dropdown-item">Engaging in Positive Behaviour Support Practices -
+                                    PDD1071</a></li>
+                            <li><a href="#" class="dropdown-item">Engaging with others to (re)design approaches to
+                                    health and social care - PDM1158</a></li>
+                            <li><a href="#" class="dropdown-item">Engineering (Industry) - E8011</a></li>
+                            <li><a href="#" class="dropdown-item">Engineering - 2612</a></li>
+                            <li><a href="#" class="dropdown-item">Engineering - 3291</a></li>
+                            <li><a href="#" class="dropdown-item">Engineering - E3001</a></li>
+                            <li><a href="#" class="dropdown-item">Engineering - E6014</a></li>
+                            <li><a href="#" class="dropdown-item">Engineering Science (Research) - 3292</a></li>
+                            <li><a href="#" class="dropdown-item">Engineering and Architectural Design - E3009</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Engineering and Arts - E3002</a></li>
+                            <li><a href="#" class="dropdown-item">Engineering and Biomedical Science - E3004</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Engineering and Commerce - E3005</a></li>
+                            <li><a href="#" class="dropdown-item">Engineering and Computer Science - E3010</a></li>
+                            <li><a href="#" class="dropdown-item">Engineering and Design - E3012</a></li>
+                            <li><a href="#" class="dropdown-item">Engineering and Engineering - E6003</a></li>
+                            <li><a href="#" class="dropdown-item">Engineering and Information Technology - E3011</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Engineering and Pharmaceutical Science - E3008</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Engineering and Science - E3007</a></li>
+                            <li><a href="#" class="dropdown-item">Environment and Sustainability (Double Masters
+                                    with
+                                    Shanghai Jiao Tong University) - S6009</a></li>
+                            <li><a href="#" class="dropdown-item">Environment and Sustainability - S6002</a></li>
+                            <li><a href="#" class="dropdown-item">Epidemiology - M4028</a></li>
+                            <li><a href="#" class="dropdown-item">Epidemiology - M4033</a></li>
+                            <li><a href="#" class="dropdown-item">Ethics and Good Research Practice - PDM1046</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Ethics for Interpreters - PDA1013</a></li>
+                            <li><a href="#" class="dropdown-item">Ethics for Translators - PDA1014</a></li>
+                            <li><a href="#" class="dropdown-item">Evaluating Public Health Programs - PDM1156</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Evolving Health Leadership - PDM1145</a></li>
+                            <li><a href="#" class="dropdown-item">Executive Ethics - PDN1002</a></li>
+                            <li><a href="#" class="dropdown-item">Executive Presence - PDB1029</a></li>
+                            <li><a href="#" class="dropdown-item">Extending Mathematical Understanding (EMU) – Early
+                                    Years (Prep to Year 2) Intervention Specialist Teacher course - PDD1036</a></li>
+                            <li><a href="#" class="dropdown-item">Extending Mathematical Understanding (EMU) –
+                                    Intervention Specialist Teacher Ongoing Professional Learning - PDD1042</a></li>
+                            <li><a href="#" class="dropdown-item">Extending Mathematical Understanding (EMU) –
+                                    Middle
+                                    Years (Years 3 to 6) Intervention Specialist Teacher course - PDD1037</a></li>
+                            <li><a href="#" class="dropdown-item">Finance - B2034</a></li>
+                            <li><a href="#" class="dropdown-item">Financial Mathematics - S6001</a></li>
+                            <li><a href="#" class="dropdown-item">Fine Art - 2953</a></li>
+                            <li><a href="#" class="dropdown-item">Fine Art - F2003</a></li>
+                            <li><a href="#" class="dropdown-item">Fine Art - F3701</a></li>
+                            <li><a href="#" class="dropdown-item">Fine Art and Business - F2007</a></li>
+                            <li><a href="#" class="dropdown-item">Fine Art and Information Technology - F2006</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Fine Art and Media Communication - F2013</a></li>
+                            <li><a href="#" class="dropdown-item">Food Science and Agribusiness - S4003</a></li>
+                            <li><a href="#" class="dropdown-item">Food Science and Agribusiness - S6004</a></li>
+                            <li><a href="#" class="dropdown-item">Forensic Medicine - M6009</a></li>
+                            <li><a href="#" class="dropdown-item">Forensic Nursing and Midwifery - M4041</a></li>
+                            <li><a href="#" class="dropdown-item">Fundamentals of Clinical Coaching (FCC) -
+                                    PDM1160</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Fundamentals of Digital Health - PDM1130</a></li>
+                            <li><a href="#" class="dropdown-item">Fundamentals of teaching in the health sciences -
+                                    PDM1173</a></li>
+                            <li><a href="#" class="dropdown-item">Gender and family violence - PDA1003</a></li>
+                            <li><a href="#" class="dropdown-item">Gender, family violence and criminal justice
+                                    responses
+                                    - PDA1004</a></li>
+                            <li><a href="#" class="dropdown-item">Genome Analytics - S4007</a></li>
+                            <li><a href="#" class="dropdown-item">Genome Analytics - S5008</a></li>
+                            <li><a href="#" class="dropdown-item">Genome Analytics - S6005</a></li>
+                            <li><a href="#" class="dropdown-item">Geographical Information Science and Technology -
+                                    S6007</a></li>
+                            <li><a href="#" class="dropdown-item">Getting Ready in Numeracy (GRIN®) - Mathematics
+                                    Intervention - PDD1041</a></li>
+                            <li><a href="#" class="dropdown-item">Global Business - B6040</a></li>
+                            <li><a href="#" class="dropdown-item">Global Business and Accounting - B6046</a></li>
+                            <li><a href="#" class="dropdown-item">Global Business and Advanced Finance - B6048</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Global Business and Applied Econometrics -
+                                    B6045</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Global Business and Applied Marketing - B6047</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Global Business and Behaviour and Systemic Change
+                                    -
+                                    B6062</a></li>
+                            <li><a href="#" class="dropdown-item">Global Business and Management - B6049</a></li>
+                            <li><a href="#" class="dropdown-item">Global Business and Regulation and Compliance -
+                                    B6044</a></li>
+                            <li><a href="#" class="dropdown-item">Global Executive Business Administration -
+                                    B6017</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Global Executive Business Administration and
+                                    Business
+                                    - B6054</a></li>
+                            <li><a href="#" class="dropdown-item">Global Studies - A2001</a></li>
+                            <li><a href="#" class="dropdown-item">Global Studies and Information Technology -
+                                    A2015</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Green Chemistry and Sustainable Technologies (Dble
+                                    Masters with Shanghai Jiao Tong Uni) - S6008</a></li>
+                            <li><a href="#" class="dropdown-item">Green Chemistry and Sustainable Technologies -
+                                    S4005</a></li>
+                            <li><a href="#" class="dropdown-item">Green Chemistry and Sustainable Technologies -
+                                    S6006</a></li>
+                            <li><a href="#" class="dropdown-item">Grid Forming Inverters - PDE1003</a></li>
+                            <li><a href="#" class="dropdown-item">Grid Integration and GPS Studies of Renewables -
+                                    PDE1001</a></li>
+                            <li><a href="#" class="dropdown-item">Health Administration - M4005</a></li>
+                            <li><a href="#" class="dropdown-item">Health Administration - M6007</a></li>
+                            <li><a href="#" class="dropdown-item">Health Data Analytics - M6036</a></li>
+                            <li><a href="#" class="dropdown-item">Health Interpreting - PDA1020</a></li>
+                            <li><a href="#" class="dropdown-item">Health Management - M4006</a></li>
+                            <li><a href="#" class="dropdown-item">Health Management - M5007</a></li>
+                            <li><a href="#" class="dropdown-item">Health Management - M6008</a></li>
+                            <li><a href="#" class="dropdown-item">Health Professions Education - M4009</a></li>
+                            <li><a href="#" class="dropdown-item">Health Professions Education - M6038</a></li>
+                            <li><a href="#" class="dropdown-item">Health Promotion - M4034</a></li>
+                            <li><a href="#" class="dropdown-item">Health Sciences - M2014</a></li>
+                            <li><a href="#" class="dropdown-item">Health Sciences - M3706</a></li>
+                            <li><a href="#" class="dropdown-item">Health and Conflict - PDM1162</a></li>
+                            <li><a href="#" class="dropdown-item">Health and family violence - PDA1006</a></li>
+                            <li><a href="#" class="dropdown-item">Higher Education - D0501</a></li>
+                            <li><a href="#" class="dropdown-item">Human Resource Management - B6035</a></li>
+                            <li><a href="#" class="dropdown-item">Human Rights - L4007</a></li>
+                            <li><a href="#" class="dropdown-item">Implementing Improvement in Healthcare Program -
+                                    12
+                                    month Teaching & Coaching - PDM1153</a></li>
+                            <li><a href="#" class="dropdown-item">Implementing Innovation in Healthcare -
+                                    PDM1133</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Inclusive Education - D6014</a></li>
+                            <li><a href="#" class="dropdown-item">Indigenous Business Leadership - B6024</a></li>
+                            <li><a href="#" class="dropdown-item">Information Technology - 0190</a></li>
+                            <li><a href="#" class="dropdown-item">Information Technology - 2638</a></li>
+                            <li><a href="#" class="dropdown-item">Information Technology - C2000</a></li>
+                            <li><a href="#" class="dropdown-item">Information Technology - C4003</a></li>
+                            <li><a href="#" class="dropdown-item">Information Technology - C6001</a></li>
+                            <li><a href="#" class="dropdown-item">Information Technology and Arts - C2002</a></li>
+                            <li><a href="#" class="dropdown-item">Information Technology and Science - C2003</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Innovation for Sustainability - S4006</a></li>
+                            <li><a href="#" class="dropdown-item">Intermediate Community Interpreting Practice -
+                                    PDA1016</a></li>
+                            <li><a href="#" class="dropdown-item">Intermediate/Advanced Interpreting in Family
+                                    Violence
+                                    Settings - PDA1019</a></li>
+                            <li><a href="#" class="dropdown-item">International Development Practice (Double Masters
+                                    with Tata Institute of Social Sciences) - A6038</a></li>
+                            <li><a href="#" class="dropdown-item">International Development Practice - A4012</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">International Development Practice - A6006</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">International Relations (Double Masters with
+                                    Shanghai
+                                    Jiao Tong University) - A6013</a></li>
+                            <li><a href="#" class="dropdown-item">International Relations - A2020</a></li>
+                            <li><a href="#" class="dropdown-item">International Relations - A6010</a></li>
+                            <li><a href="#" class="dropdown-item">International Relations - A6011</a></li>
+                            <li><a href="#" class="dropdown-item">International Sustainable Tourism Management
+                                    (Double
+                                    Masters International) - A6040</a></li>
+                            <li><a href="#" class="dropdown-item">International Sustainable Tourism Management -
+                                    A4009</a></li>
+                            <li><a href="#" class="dropdown-item">International Sustainable Tourism Management -
+                                    A6012</a></li>
+                            <li><a href="#" class="dropdown-item">Interpreting and Translation Studies (Double
+                                    Masters
+                                    International) - A6023</a></li>
+                            <li><a href="#" class="dropdown-item">Interpreting and Translation Studies - A6007</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Interpreting in Crisis Situations - PDA1021</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Introduction to Clinical Research and Evidence
+                                    Based
+                                    Practice - PDM1139</a></li>
+                            <li><a href="#" class="dropdown-item">Introduction to Community Interpreting Practice -
+                                    PDA1015</a></li>
+                            <li><a href="#" class="dropdown-item">Introduction to Data Analysis: SPSS Without Tears
+                                    -
+                                    PDM1144</a></li>
+                            <li><a href="#" class="dropdown-item">Introduction to Education Research in the Health
+                                    Professions and Sciences - PDM1167</a></li>
+                            <li><a href="#" class="dropdown-item">Introduction to Interpreting in Family Violence
+                                    Settings - PDA1018</a></li>
+                            <li><a href="#" class="dropdown-item">Introduction to Stata - PDM1033</a></li>
+                            <li><a href="#" class="dropdown-item">Introduction to Translation Practice - PDA1017</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Journalism (Double Masters with University of
+                                    Warwick)
+                                    - A6015</a></li>
+                            <li><a href="#" class="dropdown-item">Journalism - A4013</a></li>
+                            <li><a href="#" class="dropdown-item">Journalism - A6008</a></li>
+                            <li><a href="#" class="dropdown-item">Juris Doctor - L6005</a></li>
+                            <li><a href="#" class="dropdown-item">Languages - A0501</a></li>
+                            <li><a href="#" class="dropdown-item">Law - 0069</a></li>
+                            <li><a href="#" class="dropdown-item">Laws - L3001</a></li>
+                            <li><a href="#" class="dropdown-item">Laws - L4005</a></li>
+                            <li><a href="#" class="dropdown-item">Laws - L5001</a></li>
+                            <li><a href="#" class="dropdown-item">Laws - L6004</a></li>
+                            <li><a href="#" class="dropdown-item">Laws and Arts - L3003</a></li>
+                            <li><a href="#" class="dropdown-item">Laws and Biomedical Science - L3004</a></li>
+                            <li><a href="#" class="dropdown-item">Laws and Commerce - L3005</a></li>
+                            <li><a href="#" class="dropdown-item">Laws and Computer Science - L3011</a></li>
+                            <li><a href="#" class="dropdown-item">Laws and Criminology - L3012</a></li>
+                            <li><a href="#" class="dropdown-item">Laws and Engineering - L3002</a></li>
+                            <li><a href="#" class="dropdown-item">Laws and Global Studies - L3009</a></li>
+                            <li><a href="#" class="dropdown-item">Laws and Information Technology - L3010</a></li>
+                            <li><a href="#" class="dropdown-item">Laws and International Relations - L3015</a></li>
+                            <li><a href="#" class="dropdown-item">Laws and Music - L3006</a></li>
+                            <li><a href="#" class="dropdown-item">Laws and Politics, Philosophy and Economics -
+                                    L3013</a></li>
+                            <li><a href="#" class="dropdown-item">Laws and Psychology - L3014</a></li>
+                            <li><a href="#" class="dropdown-item">Laws and Science - L3007</a></li>
+                            <li><a href="#" class="dropdown-item">Leading Collaboration through STEM Education -
+                                    PDD1049</a></li>
+                            <li><a href="#" class="dropdown-item">Learning Design and Technology - D2003</a></li>
+                            <li><a href="#" class="dropdown-item">Learning and Teaching with Simulation -
+                                    PDM1115</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Learning conversations: Feedback and debriefing
+                                    practices in clinical simulation - PDM1106</a></li>
+                            <li><a href="#" class="dropdown-item">Legal Interpreting - PDA1010</a></li>
+                            <li><a href="#" class="dropdown-item">Legal Studies - L4004</a></li>
+                            <li><a href="#" class="dropdown-item">Legal Studies - L5004</a></li>
+                            <li><a href="#" class="dropdown-item">Legal Studies - L6013</a></li>
+                            <li><a href="#" class="dropdown-item">Liberal Arts - A0502</a></li>
+                            <li><a href="#" class="dropdown-item">MCHRI Women In Leadership Program - PDM1148</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">MRI PRO - Advanced Reading of Prostate MRI -
+                                    PDM1159</a></li>
+                            <li><a href="#" class="dropdown-item">Magnetic Resonance Imaging - M4019</a></li>
+                            <li><a href="#" class="dropdown-item">Maintaining a Mindful Life - PDA1035</a></li>
+                            <li><a href="#" class="dropdown-item">Management - B6041</a></li>
+                            <li><a href="#" class="dropdown-item">Management Fundamentals for Clinical Trials -
+                                    PDM1171</a></li>
+                            <li><a href="#" class="dropdown-item">Management and Accounting - B6053</a></li>
+                            <li><a href="#" class="dropdown-item">Management and Advanced Finance - B6051</a></li>
+                            <li><a href="#" class="dropdown-item">Management and Applied Marketing - B6052</a></li>
+                            <li><a href="#" class="dropdown-item">Management and Behaviour and Systemic Change -
+                                    B6063</a></li>
+                            <li><a href="#" class="dropdown-item">Management and Regulation and Compliance -
+                                    B6050</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Marketing - B2036</a></li>
+                            <li><a href="#" class="dropdown-item">Marketing and Arts - B2039</a></li>
+                            <li><a href="#" class="dropdown-item">Marketing and Digital Communications - A4014</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Marketing and Digital Communications - A6032</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Marketing and Media Communication - B2044</a></li>
+                            <li><a href="#" class="dropdown-item">Masterclass in Implementation Science and
+                                    Effective
+                                    Healthcare Improvement in Practice - PDM1152</a></li>
+                            <li><a href="#" class="dropdown-item">Mathematics - S6003</a></li>
+                            <li><a href="#" class="dropdown-item">Media Communication - A2002</a></li>
+                            <li><a href="#" class="dropdown-item">Medical Science - M3701</a></li>
+                            <li><a href="#" class="dropdown-item">Medical Science and Medicine - M6011</a></li>
+                            <li><a href="#" class="dropdown-item">Medical Science and Medicine - M6018</a></li>
+                            <li><a href="#" class="dropdown-item">Medical Ultrasound - M6005</a></li>
+                            <li><a href="#" class="dropdown-item">Medication Management Review - PDP1001</a></li>
+                            <li><a href="#" class="dropdown-item">Medicine, Nursing and Health Sciences - 0047</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Mental Health Interpreting - PDA1024</a></li>
+                            <li><a href="#" class="dropdown-item">Mental Health Science - M6022</a></li>
+                            <li><a href="#" class="dropdown-item">Mindful Critical Thinking - PDA1032</a></li>
+                            <li><a href="#" class="dropdown-item">Mindful Leadership - PDA1037</a></li>
+                            <li><a href="#" class="dropdown-item">Mindful Parenting - PDA1034</a></li>
+                            <li><a href="#" class="dropdown-item">Mindfulness for Wellbeing and Peak Performance -
+                                    PDA1036</a></li>
+                            <li><a href="#" class="dropdown-item">Mixed Methods Education Research in Health
+                                    Professions
+                                    and Sciences - PDM1166</a></li>
+                            <li><a href="#" class="dropdown-item">Monash Access Program - D0001</a></li>
+                            <li><a href="#" class="dropdown-item">Monash Sustainable Development Institute -
+                                    2710</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Monash University Accident Research Centre -
+                                    2602</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Monash University Foundation Year - Extended -
+                                    3633</a></li>
+                            <li><a href="#" class="dropdown-item">Monash University Foundation Year - Intensive -
+                                    3622</a></li>
+                            <li><a href="#" class="dropdown-item">Monash University Foundation Year - Standard -
+                                    3611</a></li>
+                            <li><a href="#" class="dropdown-item">Music - 4088</a></li>
+                            <li><a href="#" class="dropdown-item">Music - A2003</a></li>
+                            <li><a href="#" class="dropdown-item">Music - A3702</a></li>
+                            <li><a href="#" class="dropdown-item">My Allied Health Space - PDM1137</a></li>
+                            <li><a href="#" class="dropdown-item">My Professional Practice Space - PDM1151</a></li>
+                            <li><a href="#" class="dropdown-item">NHET-SIM - PDM1007</a></li>
+                            <li><a href="#" class="dropdown-item">Navigating Burnout: Flourishing in Work and Life -
+                                    PDA1033</a></li>
+                            <li><a href="#" class="dropdown-item">Negotiations and Influence - PDB1065</a></li>
+                            <li><a href="#" class="dropdown-item">Net Zero Academy - Climate Risks and
+                                    Opportunities</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Net Zero Academy: Executive Leadership Program -
+                                    PDU1010</a></li>
+                            <li><a href="#" class="dropdown-item">Net Zero for Your Building Portfolio - PDU1009</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Nursing - M2006</a></li>
+                            <li><a href="#" class="dropdown-item">Nursing - M3704</a></li>
+                            <li><a href="#" class="dropdown-item">Nursing Practice - M6016</a></li>
+                            <li><a href="#" class="dropdown-item">Nursing and Midwifery - M3007</a></li>
+                            <li><a href="#" class="dropdown-item">Nutrition Science - M2001</a></li>
+                            <li><a href="#" class="dropdown-item">Nutrition and Dietetics - M6002</a></li>
+                            <li><a href="#" class="dropdown-item">Occupational Therapy - M3001</a></li>
+                            <li><a href="#" class="dropdown-item">Occupational Therapy Practice - M6017</a></li>
+                            <li><a href="#" class="dropdown-item">Occupational and Environmental Health - M5018</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Occupational and Environmental Health - M6026</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">On the face of it – Understanding AHPRA’s
+                                    guidelines
+                                    on mental health assessment of cosmetic - PDM1181</a></li>
+                            <li><a href="#" class="dropdown-item">Online Counselling: Concepts, Ethics and Skills -
+                                    PDD1070</a></li>
+                            <li><a href="#" class="dropdown-item">Paramedic Practitioner - M6048</a></li>
+                            <li><a href="#" class="dropdown-item">Paramedicine - M2011</a></li>
+                            <li><a href="#" class="dropdown-item">Paramedicine - M3707</a></li>
+                            <li><a href="#" class="dropdown-item">Patient reported outcome measures (PROMs) for
+                                    clinical
+                                    registries - PDM1146</a></li>
+                            <li><a href="#" class="dropdown-item">Perioperative Medicine - M4029</a></li>
+                            <li><a href="#" class="dropdown-item">Perioperative Medicine - M6033</a></li>
+                            <li><a href="#" class="dropdown-item">Personal Injury Management - M4035</a></li>
+                            <li><a href="#" class="dropdown-item">Personal Injury Scheme Evaluation - PDM1168</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Personal Injury Strategic Claims Management -
+                                    PDM1164</a></li>
+                            <li><a href="#" class="dropdown-item">Pharmaceutical Science - P2001</a></li>
+                            <li><a href="#" class="dropdown-item">Pharmaceutical Science - P3701</a></li>
+                            <li><a href="#" class="dropdown-item">Pharmaceutical Science - P6005</a></li>
+                            <li><a href="#" class="dropdown-item">Pharmaceutical Science Advanced - P3002</a></li>
+                            <li><a href="#" class="dropdown-item">Pharmacy - P3001</a></li>
+                            <li><a href="#" class="dropdown-item">Pharmacy - P6001</a></li>
+                            <li><a href="#" class="dropdown-item">Pharmacy Practice - P4001</a></li>
+                            <li><a href="#" class="dropdown-item">Pharmacy and Pharmaceutical Sciences - 2625</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Philosophy (IITB-Monash) - 4706</a></li>
+                            <li><a href="#" class="dropdown-item">Philosophy (Joint Award with Southeast University)
+                                    -
+                                    4703</a></li>
+                            <li><a href="#" class="dropdown-item">Philosophy (Joint award with the University of
+                                    Warwick) - 3547</a></li>
+                            <li><a href="#" class="dropdown-item">Philosophy (Monash - Bath) - S8001</a></li>
+                            <li><a href="#" class="dropdown-item">Philosophy (Monash - Leipzig) - S8003</a></li>
+                            <li><a href="#" class="dropdown-item">Philosophy (Monash - Warwick) - 4522</a></li>
+                            <li><a href="#" class="dropdown-item">Philosophy (Monash-Bayreuth) - 4714</a></li>
+                            <li><a href="#" class="dropdown-item">Philosophy - 2603</a></li>
+                            <li><a href="#" class="dropdown-item">Philosophy - 2627</a></li>
+                            <li><a href="#" class="dropdown-item">Philosophy - 3194</a></li>
+                            <li><a href="#" class="dropdown-item">Philosophy - 3337</a></li>
+                            <li><a href="#" class="dropdown-item">Philosophy - 3379</a></li>
+                            <li><a href="#" class="dropdown-item">Philosophy - 3438</a></li>
+                            <li><a href="#" class="dropdown-item">Philosophy - 3521</a></li>
+                            <li><a href="#" class="dropdown-item">Philosophy - D7001</a></li>
+                            <li><a href="#" class="dropdown-item">Physiotherapy - M3002</a></li>
+                            <li><a href="#" class="dropdown-item">Physiotherapy - M6032</a></li>
+                            <li><a href="#" class="dropdown-item">Podiatric Medicine - M6043</a></li>
+                            <li><a href="#" class="dropdown-item">Politics, Philosophy and Economics - A2010</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Politics, Philosophy and Economics and Arts -
+                                    A2013</a></li>
+                            <li><a href="#" class="dropdown-item">Principles of Personal Injury Scheme Design -
+                                    PDM1138</a></li>
+                            <li><a href="#" class="dropdown-item">Professional Accounting - B6011</a></li>
+                            <li><a href="#" class="dropdown-item">Professional Accounting and Business Law -
+                                    B6015</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Professional Certificate of Business
+                                    Administration -
+                                    B9001</a></li>
+                            <li><a href="#" class="dropdown-item">Professional Certificate of Clinical Simulation -
+                                    M9002</a></li>
+                            <li><a href="#" class="dropdown-item">Professional Certificate of Epidemiology -
+                                    M9004</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Professional Certificate of Health Professions
+                                    Education - M9001</a></li>
+                            <li><a href="#" class="dropdown-item">Professional Certificate of Public Health -
+                                    M9003</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Professional Engineering - E6011</a></li>
+                            <li><a href="#" class="dropdown-item">Professional Psychology - D5002</a></li>
+                            <li><a href="#" class="dropdown-item">Professional Psychology - D6008</a></li>
+                            <li><a href="#" class="dropdown-item">Program Development Using Intervention Mapping -
+                                    PDM1157</a></li>
+                            <li><a href="#" class="dropdown-item">Project Management - B4005</a></li>
+                            <li><a href="#" class="dropdown-item">Project Management - B5005</a></li>
+                            <li><a href="#" class="dropdown-item">Project Management - B6025</a></li>
+                            <li><a href="#" class="dropdown-item">Psychology - M2018</a></li>
+                            <li><a href="#" class="dropdown-item">Psychology - M3708</a></li>
+                            <li><a href="#" class="dropdown-item">Psychology - M5013</a></li>
+                            <li><a href="#" class="dropdown-item">Psychology Advanced - M5003</a></li>
+                            <li><a href="#" class="dropdown-item">Psychology and Arts - M2019</a></li>
+                            <li><a href="#" class="dropdown-item">Psychology and Commerce - M2020</a></li>
+                            <li><a href="#" class="dropdown-item">Psychology and Science - M2021</a></li>
+                            <li><a href="#" class="dropdown-item">Public Health - M2012</a></li>
+                            <li><a href="#" class="dropdown-item">Public Health - M4032</a></li>
+                            <li><a href="#" class="dropdown-item">Public Health - M6021</a></li>
+                            <li><a href="#" class="dropdown-item">Public Health - M6024</a></li>
+                            <li><a href="#" class="dropdown-item">Public Policy (Double Masters with O.P. Jindal
+                                    Global
+                                    University) - A6037</a></li>
+                            <li><a href="#" class="dropdown-item">Public Policy - A4011</a></li>
+                            <li><a href="#" class="dropdown-item">Public Policy - A6028</a></li>
+                            <li><a href="#" class="dropdown-item">Qualitative Research Methods for Public Health -
+                                    PDM1122</a></li>
+                            <li><a href="#" class="dropdown-item">Radiation Sciences - M2017</a></li>
+                            <li><a href="#" class="dropdown-item">Radiation Therapy - M6004</a></li>
+                            <li><a href="#" class="dropdown-item">Radiography and Medical Imaging - M3006</a></li>
+                            <li><a href="#" class="dropdown-item">Rail Welding - Fundamentals to Frontiers -
+                                    PDE1004</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Railway Rolling Stock - The Fundamentals of
+                                    Rolling
+                                    Stock Design, Maintenance and Operations - PDE1006</a></li>
+                            <li><a href="#" class="dropdown-item">Regulation and Compliance - B6037</a></li>
+                            <li><a href="#" class="dropdown-item">Reproductive Sciences - 0100</a></li>
+                            <li><a href="#" class="dropdown-item">Reproductive Sciences - M5010</a></li>
+                            <li><a href="#" class="dropdown-item">SPSS without tears - PDM1044</a></li>
+                            <li><a href="#" class="dropdown-item">Scenario design for simulation-based education -
+                                    PDM1116</a></li>
+                            <li><a href="#" class="dropdown-item">Science - 0057</a></li>
+                            <li><a href="#" class="dropdown-item">Science - 2637</a></li>
+                            <li><a href="#" class="dropdown-item">Science - Education - 2646</a></li>
+                            <li><a href="#" class="dropdown-item">Science - S2000</a></li>
+                            <li><a href="#" class="dropdown-item">Science - S3701</a></li>
+
+
+
+                            <li><a href="#" class="dropdown-item">Science - S6000</a></li>
+                            <li><a href="#" class="dropdown-item">Science Advanced - Global Challenges - S3001</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Science Advanced - Research - S3002</a></li>
+                            <li><a href="#" class="dropdown-item">Science and Arts - S2006</a></li>
+                            <li><a href="#" class="dropdown-item">Science and Biomedical Science - S2007</a></li>
+                            <li><a href="#" class="dropdown-item">Science and Computer Science - S2004</a></li>
+                            <li><a href="#" class="dropdown-item">Science and Global Studies - S2003</a></li>
+                            <li><a href="#" class="dropdown-item">Science and Music - S2005</a></li>
+                            <li><a href="#" class="dropdown-item">Simultaneous Interpreting - PDA1022</a></li>
+                            <li><a href="#" class="dropdown-item">Social Work - M6012</a></li>
+                            <li><a href="#" class="dropdown-item">Strategic Communications Management (Double
+                                    Masters
+                                    with Shanghai Jiao Tong University) - A6031</a></li>
+                            <li><a href="#" class="dropdown-item">Strategic Communications Management - A4010</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Strategic Communications Management - A6030</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Stress management for interpreters - PDA1023</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Supporting Children on the Autism Spectrum in
+                                    Early
+                                    Childhood Education - PDD1088</a></li>
+                            <li><a href="#" class="dropdown-item">Supporting Improved Student Behaviour at School -
+                                    PDD1082</a></li>
+                            <li><a href="#" class="dropdown-item">Surgery - 3443</a></li>
+                            <li><a href="#" class="dropdown-item">Sustainable Healthcare in Practice - PDU1007</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">TESOL - D6005</a></li>
+                            <li><a href="#" class="dropdown-item">Teaching - D6001</a></li>
+                            <li><a href="#" class="dropdown-item">Teaching Strategies to Support Students with
+                                    Disabilities and Difficulties - PDD1004</a></li>
+                            <li><a href="#" class="dropdown-item">Technology and Regulation - L4009</a></li>
+                            <li><a href="#" class="dropdown-item">Tertiary Studies - D0502</a></li>
+                            <li><a href="#" class="dropdown-item">The Colloquium - PDN1001</a></li>
+                            <li><a href="#" class="dropdown-item">Theatre performance - 4066</a></li>
+                            <li><a href="#" class="dropdown-item">Track Infrastructure - Fundamentals for Railway
+                                    Professionals - PDE1005</a></li>
+                            <li><a href="#" class="dropdown-item">Transforming Retail Food Environments to be
+                                    Health-Enabling - PDM1140</a></li>
+                            <li><a href="#" class="dropdown-item">Translation and Technology - PDA1025</a></li>
+                            <li><a href="#" class="dropdown-item">Translation studies - 4080</a></li>
+                            <li><a href="#" class="dropdown-item">Transport and Mobility Planning - E6016</a></li>
+                            <li><a href="#" class="dropdown-item">Travel Medicine Masterclass - PDM1043</a></li>
+                            <li><a href="#" class="dropdown-item">Urban Planning and Design - F6004</a></li>
+                            <li><a href="#" class="dropdown-item">Using data to understand family violence -
+                                    PDA1005</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Wellbeing and Engagement for Teachers -
+                                    PDD1084</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Wheel-Rail Interaction Fundamentals for Railway
+                                    Professionals - PDE1007</a></li>
+                            <li><a href="#" class="dropdown-item">Working with Primary School Aged Students with
+                                    Autism
+                                    - PDD1003</a></li>
+                            <li><a href="#" class="dropdown-item">Wound Care - M4027</a></li>
+                            <li><a href="#" class="dropdown-item">Wound Care - M5028</a></li>
+                            <li><a href="#" class="dropdown-item">Wound Care - M6035</a></li>
+                            <li><a href="#" class="dropdown-item">X-ray Image Interpretation - M4020</a></li>
+                            <li><a href="#" class="dropdown-item">ppl - Public Purpose Leadership program -
+                                    PDU1003</a>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Too young for menopause?: An evidence-based
+                                    approach
+                                    to managing early menopause and premature ovarian insufficiency - PDM1177</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="dropdown-item">Majors, extended majors, minors and specialisations</a>
+                    </li>
+                    <li><a href="" class="dropdown-item">Professional Development</a></li>
+                    <li><a href="" class="dropdown-item">Entry pathways for domestic students</a></li>
+                    <li><a href="" class="dropdown-item">Entry pathways for international students</a></li>
+                    <li><a href="" class="dropdown-item">Entry requirements</a></li>
+                    <li><a href="" class="dropdown-item">English language programs</a></li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button">Admissions transparency</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">ATAR distribution report</a></li>
+                            <li><a href="#" class="dropdown-item">Student profile</a></li>
+                            <li><a href="#" class="dropdown-item">ATAR offer profile report</a></li>
+                            <li><a href="#" class="dropdown-item">Admissions transparency FAQs</a></li>
+                            <li><a href="#" class="dropdown-item">Inherent requirements</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button">ATAR explained</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">ATAR scores</a></li>
+                            <li><a href="#" class="dropdown-item">ATAR explained redirect</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="dropdown-item">Course guides</a></li>
+                    <li><a href="" class="dropdown-item">Study online</a></li>
+                    <li><a href="" class="dropdown-item">Prerequisite subjects and assumed knowledge</a></li>
+                </ul>
+            </li>
+            <li class="btn-group dropend">
+                <a class="btn dropdown-toggle" href="#" role="button" aria-expanded="false" data-bs-toggle="dropdown">
+                    How to apply
+                </a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button">Domestic student
+                            applications</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#" role="button">Entry schemes</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#" role="button">Special
+                                            Entry
+                                            Access
+                                            Scheme (SEAS)</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#" class="dropdown-item">Late SEAS applications</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#" role="button">The Monash
+                                            Guarantee</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#" class="dropdown-item">Under-represented schools -
+                                                    entry</a>
+                                            </li>
+                                            <li><a href="#" class="dropdown-item">Under-represented schools - 2025
+                                                    entry</a>
+                                            </li>
+                                            <li><a href="#" class="dropdown-item">Under-</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">FAQs</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="dropdown-item">Student profiles</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button">International student
+                            applications</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Admission eligibility search</a></li>
+                            <li><a href="#" class="dropdown-item">Certifying documents (for domestic and
+                                    international students)</a></li>
+                            <li><a href="#" class="dropdown-item">Current Monash University Foundation Year
+                                    students in Australia</a></li>
+                            <li><a href="#" class="dropdown-item">Current Monash University Foundation Year
+                                    students outside Australia</a></li>
+                            <li><a href="#" class="dropdown-item">Current Monash Diploma students in
+                                    Australia</a></li>
+                            <li><a href="#" class="dropdown-item">Current Monash Diploma students outside
+                                    Australia</a></li>
+                            <li><a href="#" class="dropdown-item">Information for students under 18</a></li>
+                            <li><a href="#" class="dropdown-item">Visa requirements</a></li>
+                            <li><a href="#" class="dropdown-item">Apply through an agent</a></li>
+                            <li class="dropdown-submenu"></li>
+                            <a class="dropdown-item dropdown-toggle" href="#" role="button">After you apply</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">Accept your offer</a>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#" role="button">Preparing to
+                                        arrive</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" class="dropdown-item">Book your airport reception</a>
+                                        </li>
+                                        <li><a href="#" class="dropdown-item">Ppre-arrival briefings
+                                            </a>
+                                        </li>
+                                        <li><a href="#" class="dropdown-item">Under-</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="dropdown-item">Defer or change your course</a>
+                                <li><a href="#" class="dropdown-item">Alternative entries to University</a>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#" role="button">FAQs</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" class="dropdown-item">Under-represented schools -
+                                                entry</a>
+                                        </li>
+                                        <li><a href="#" class="dropdown-item">Under-represented schools - 2025
+                                                entry</a>
+                                        </li>
+                                        <li><a href="#" class="dropdown-item">APPLICATION PROGRESS</a></li>
+                                        <li><a href="#" class="dropdown-item">CHANGE COURSE PREFERENCE /
+                                                DEFERRAL</a>
+                                        </li>
+                                        <li><a href="#" class="dropdown-item">CREDIT TRANSFER</a></li>
+                                        <li><a href="#" class="dropdown-item">HOW TO ACCEPT / PAYMENT OPTION</a>
+                                        </li>
+                                        <li><a href="#" class="dropdown-item">COE</a></li>
+                                        <li><a href="#" class="dropdown-item">WHAT ARE THE NEXT STEPS AFTER
+                                                ACCEPTING MY
+                                                OFFER</a></li>
+                                        <li><a href="#" class="dropdown-item">UNDER 18</a></li>
+                                        <li><a href="#" class="dropdown-item">PRE-ARRIVAL SERVICES</a></li>
+                                    </ul>
+                                </li>
+
+
+
+                            </ul>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="dropdown-item">Research degree applications</a></li>
+                    <li><a href="#" class="dropdown-item">Credit for prior study</a></li>
+                    <li><a href="#" class="dropdown-item">Indigeneous student applications</a></li>
+                    <li><a href="#" class="dropdown-item">Current Monash student course transfer</a></li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button">Enquiries</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">General domestic enquiry</a></li>
+                            <li><a href="#" class="dropdown-item">General international enquiry</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="btn-group dropend">
+                <a class="btn dropdown-toggle" href="#" role="button" aria-expanded="false" data-bs-toggle="dropdown">
+                    Fees and scholarships
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Fees</a></li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button">Information for schools and
+                            teachers</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#" role="button">Loan and
+                                    assistance</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">Domestic full-fee (FEE-HELP)</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Commonwealth Supported Place (CSP)</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Income support for Masters Courses</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Getting support for the SSA Fee
+                                            (SA-HELP)</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Additional things to keep in mind</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button">Scholarships</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="" class="dropdown-item">Find a scholarship</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#" role="button">Applications</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#" role="button">Applications</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#" role="button">Loan
+                                                    and
+                                                    assistance</a>
+                                                <ul class="dropdown-menu">
+
+                                                    <li><a href="#" class="dropdown-item">Scholarships and grants
+                                                            avialable mid-year 2024</a>
+                                                    </li>
+                                                    <li><a href="#" class="dropdown-item">Scholarships and grants
+                                                            available in semester 1 2024</a>
+                                                    </li>
+                                                    <li class="dropdown-submenu">
+                                                        <a class="dropdown-item dropdown-toggle" href="#"
+                                                            role="button">Information for schools and
+                                                            teachers</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="dropdown-submenu">
+                                                                <a class="dropdown-item dropdown-toggle" href="#"
+                                                                    role="button">Supporting documentation</a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a href="#" class="dropdown-item">Certifying
+                                                                            documents</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Commonwealth Supported Place (CSP)</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Income support for Masters Courses</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Getting support for the SSA Fee
+                                            (SA-HELP)</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Additional things to keep in mind</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="dropdown-item">Summer and Winter Vacation Research Scholarship
+                                    Program</a></li>
+                            <li><a href="" class="dropdown-item">Scholarship equity and disadvantage definitions</a>
+                            </li>
+                            <li><a href="" class="dropdown-item">Entry Schemes</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#" role="button">Current Students</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="" class="dropdown-item">Scholarship payments</a></li>
+                                    <li><a href="" class="dropdown-item">Enrolment changes</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#" role="button">Terms and
+                                            conditions</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#" class="dropdown-item">Scolarships terms and
+                                                    conditions for 2025</a></li>
+                                            <li><a href="#" class="dropdown-item">Scolarships terms and
+                                                    conditions for 2024</a></li>
+                                            <li><a href="#" class="dropdown-item">Scolarships terms and
+                                                    conditions for 2023</a></li>
+                                            <li><a href="#" class="dropdown-item">Scolarships terms and
+                                                    conditions for 2022</a></li>
+                                            <li><a href="#" class="dropdown-item">Scolarships terms and
+                                                    conditions for 2021</a></li>
+                                            <li><a href="#" class="dropdown-item">Scolarships terms and
+                                                    conditions for 2020</a></li>
+                                            <li><a href="#" class="dropdown-item">Scolarships terms and
+                                                    conditions for 2019</a></li>
+                                            <li><a href="#" class="dropdown-item">Scolarships terms and
+                                                    conditions for 2018</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="" class="dropdown-item">Multiple Scholarships</a></li>
+                                    <li><a href="" class="dropdown-item">Retention requirements</a></li>
+                                    <li><a href="" class="dropdown-item">Centrelink and taxation</a></li>
+                                    <li><a href="" class="dropdown-item">Distinguished scholarships</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="dropdown-item">International study grants</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="side-footer" style="min-height: 80px;">
+            <a href="#" class="btn navBtn sideNavBtn">Apply to study</a>
+        </div>
+    </div>
+
+
+
+    <footer class="w-100 d-flex flex-column align-items-center justify-content-center gap-4 p-5">
+        <div class="social-icons d-flex align-items-center gap-4">
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""> <i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+        <p class="about">We acknowledge and pay respects to the Elders and Traditional Owners of the land on which
+            our
+            Australian
+            campuses stand. <a href="">Information for Indigenous Australians</a></p>
+        <div class="w-100 footer-menus d-flex align-items-center justify-content-between flex-wrap gap-3">
+            <div class="menu">
+                <div class="menu-head">
+                    Community
+                </div>
+                <ul class="menu-items">
+                    <li><a href="">Faculties</a></li>
+                    <li><a href="">Location</a></li>
+                    <li><a href="">Diversity and Inclusion</a></li>
+                    <li><a href="">Safety and Security</a></li>
+                    <li><a href="">Sustainable development</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <div class="menu-head">
+                    RESOURCES
+                </div>
+                <ul class="menu-items">
+                    <li><a href="">Important dates</a></li>
+                    <li><a href="">How to apply</a></li>
+                    <li><a href="">A-Z index</a></li>
+                    <li><a href="">Policy Bank</a></li>
+                    <li><a href="">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <div class="menu-head">
+                    CONTACT
+                </div>
+                <ul class="menu-items">
+                    <li><a href="">Contact us</a></li>
+                    <li><a href="">Campus maps</a></li>
+                    <li><a href="">Jobs at Monash</a></li>
+                    <li><a href="">Recruit a student</a></li>
+                    <li><a href="">Pay online</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <div class="menu-head">
+                    NEWS
+                </div>
+                <ul class="menu-items">
+                    <li><a href="">Latest news</a></li>
+                    <li><a href="">Monash Lens</a></li>
+                    <li><a href="">Podcasts</a></li>
+                    <li><a href="">A Different Lens</a></li>
+                    <li><a href="">Monash Life</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <div class="menu-head">
+                    ON OUR SITE
+                </div>
+                <ul class="menu-items">
+                    <li><a href="">Who we are</a></li>
+                    <li><a href="">Find a course</a></li>
+                    <li><a href="">Find a researcher</a></li>
+                    <li><a href="">Partner with Monash</a></li>
+                    <li><a href="">Sitemap</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-menus-dropdown">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed menu-head" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            COMMUNITY
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul class="menu-items">
+                                <li><a href="">Faculties</a></li>
+                                <li><a href="">Location</a></li>
+                                <li><a href="">Diversity and Inclusion</a></li>
+                                <li><a href="">Safety and Security</a></li>
+                                <li><a href="">Sustainable development</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed menu-head" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collaspeTwo" aria-expanded="false" aria-controls="flush-collaspeTwo">
+                            RESOURCES
+                        </button>
+                    </h2>
+                    <div id="flush-collaspeTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul class="menu-items">
+                                <li><a href="">Important dates</a></li>
+                                <li><a href="">How to apply</a></li>
+                                <li><a href="">A-Z index</a></li>
+                                <li><a href="">Policy Bank</a></li>
+                                <li><a href="">FAQs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed menu-head" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            CONTACT
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul class="menu-items">
+                                <li><a href="">Contact us</a></li>
+                                <li><a href="">Campus maps</a></li>
+                                <li><a href="">Jobs at Monash</a></li>
+                                <li><a href="">Recruit a student</a></li>
+                                <li><a href="">Pay online</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed menu-head" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            NEWS
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul class="menu-items">
+                                <li><a href="">Latest news</a></li>
+                                <li><a href="">Monash Lens</a></li>
+                                <li><a href="">Podcasts</a></li>
+                                <li><a href="">A Different Lens</a></li>
+                                <li><a href="">Monash Life</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed menu-head" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFive" aria-expanded="false"
+                            aria-controls="flush-collapseFive">
+                            ON OUR SITE
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul class="menu-items">
+                                <li><a href="">Who we are</a></li>
+                                <li><a href="">Find a course</a></li>
+                                <li><a href="">Find a researcher</a></li>
+                                <li><a href="">Partner with Monash</a></li>
+                                <li><a href="">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <hr>
+        <div class="details d-flex align-items-start justify-content-between w-100 flex-wrap gap-3">
+            <div class="sub-details d-flex flex-column gap-3">
+                <div class="menu-head">
+                    REGISTERED AUSTRALIAN UNIVERSITY
+                </div>
+                <div class="d-flex flex-column">
+                    <p>ABN: 12 377 614 012</p>
+                    <p>TEQSA Provider ID: PRV12140</p>
+                </div>
+            </div>
+            <div class="sub-details d-flex flex-column gap-3">
+                <div class="menu-head">
+                    CRICOS PROVIDER NUMBER
+                </div>
+                <div class="d-flex flex-column">
+                    <p>Monash University: 00008C</p>
+                    <p>Monash College: 01857J</p>
+                </div>
+            </div>
+            <div class="sub-details d-flex flex-column gap-3">
+                <div class="menu-head">
+                    AUTHORISED BY
+                </div>
+                <div class="d-flex flex-column">
+                    <p>Chief Marketing, Admissiona and Communications Officer and Vice-President</p>
+                </div>
+            </div>
+            <div class="sub-details d-flex flex-column gap-3">
+                <div class="menu-head">
+                    MAINTAINED BY
+                </div>
+                <div class="d-flex flex-column">
+                    <p><a href="" style="text-decoration: underline;">Digital Team</a></p>
+                    <p>Last Updated: Aug 2024</p>
+                </div>
+            </div>
+            <div class="sub-details d-flex h-100 align-items-center justify-content-center">
+                <img style="opacity: 0.6;" src="assets/Group of Eight Australia logo.svg" alt="">
+            </div>
+
+        </div>
+        <hr>
+        <div class="bottom-menu w-100 d-flex align-items-center justify-content-between flex-wrap">
+            <ul class="policies d-flex align-items-center ">
+                <li><a href="">Accessibility</a></li>
+                <li><a href="">Disclaimer & copyright</a></li>
+                <li><a href="">Terms & conditions</a></li>
+                <li><a href="">Data privacy & cyber security</a></li>
+                <li><a href="">Data Consent Settings</a></li>
+            </ul>
+            <div class="d-flex align-items-center">
+                <p>Copyright © 2024 Monash University</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
